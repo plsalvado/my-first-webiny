@@ -70,39 +70,40 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/auth@npm:4.1.0":
-  version: 4.1.0
-  resolution: "@aws-amplify/auth@npm:4.1.0"
-  dependencies:
-    "@aws-amplify/cache": 4.0.6
-    "@aws-amplify/core": 4.1.2
-    amazon-cognito-identity-js: 5.0.3
-    crypto-js: ^4.0.0
-  checksum: 83cd648c6e1c96064a043345aed762f98c64dbbc60796804dba6066f665f011c5ae04e46a539a1f6a40690ff790cd16badf396b81bbd62ec7a9202bfeaddb66a
-  languageName: node
-  linkType: hard
-
-"@aws-amplify/cache@npm:4.0.6":
-  version: 4.0.6
-  resolution: "@aws-amplify/cache@npm:4.0.6"
-  dependencies:
-    "@aws-amplify/core": 4.1.2
-  checksum: 193080fdcf0b9c5771db0159c2650b8a288a5f3012616bcdd31b606ad9e8f09df78979d55fa52afe6010bc9950551b6f96aee92ce20381b4d670f967011b1701
-  languageName: node
-  linkType: hard
-
-"@aws-amplify/core@npm:4.1.2":
+"@aws-amplify/auth@npm:4.1.2":
   version: 4.1.2
-  resolution: "@aws-amplify/core@npm:4.1.2"
+  resolution: "@aws-amplify/auth@npm:4.1.2"
+  dependencies:
+    "@aws-amplify/cache": 4.0.8
+    "@aws-amplify/core": 4.2.0
+    amazon-cognito-identity-js: 5.0.5
+    crypto-js: ^4.0.0
+  checksum: 78ef914dfda12249aea092b170f0c1153e49df7b7011a8342e87a7b61ea99b4e1df5b62b80e21a38951a01a3f8e6a39279c1095c7a2ef44edc2d237f1a8c8a4c
+  languageName: node
+  linkType: hard
+
+"@aws-amplify/cache@npm:4.0.8":
+  version: 4.0.8
+  resolution: "@aws-amplify/cache@npm:4.0.8"
+  dependencies:
+    "@aws-amplify/core": 4.2.0
+  checksum: 0d402db53a862dc5213de1fb3125ea3a5cc0ad4b7b9183043360116051876fe04250ed54bfea01aba00717da4024a65be314364a3d168ff1b6cb096392446a8d
+  languageName: node
+  linkType: hard
+
+"@aws-amplify/core@npm:4.2.0":
+  version: 4.2.0
+  resolution: "@aws-amplify/core@npm:4.2.0"
   dependencies:
     "@aws-crypto/sha256-js": 1.0.0-alpha.0
+    "@aws-sdk/client-cloudwatch-logs": 3.6.1
     "@aws-sdk/client-cognito-identity": 3.6.1
     "@aws-sdk/credential-provider-cognito-identity": 3.6.1
     "@aws-sdk/types": 3.6.1
     "@aws-sdk/util-hex-encoding": 3.6.1
     universal-cookie: ^4.0.4
     zen-observable-ts: 0.8.19
-  checksum: e736b773faa6dd6870ca33a0762a4d03c8de4e4693ba7925e13ae6a2ac195694dacca71c1d3686456e48165ce346ca0e8a7076684ee4cc616ba981907517df84
+  checksum: 4ac012967bc07d531f61c986facb47c9cb8b834d1fb186234b223d90c38cebfee4e07a65830bdfd37cece607dd1ce5da91a9a86a335ca814fc1bee9dfeba5305
   languageName: node
   linkType: hard
 
@@ -168,6 +169,45 @@ __metadata:
     "@aws-sdk/types": 3.6.1
     tslib: ^1.8.0
   checksum: 93fa20d45e52a90b429700c11b9f21a254fee07f4de8b9e689d76e602f05f3be15ae97d07556b14c2a5bdfd5631ac28a5e686fa59d21883748b44932d69781c2
+  languageName: node
+  linkType: hard
+
+"@aws-sdk/client-cloudwatch-logs@npm:3.6.1":
+  version: 3.6.1
+  resolution: "@aws-sdk/client-cloudwatch-logs@npm:3.6.1"
+  dependencies:
+    "@aws-crypto/sha256-browser": ^1.0.0
+    "@aws-crypto/sha256-js": ^1.0.0
+    "@aws-sdk/config-resolver": 3.6.1
+    "@aws-sdk/credential-provider-node": 3.6.1
+    "@aws-sdk/fetch-http-handler": 3.6.1
+    "@aws-sdk/hash-node": 3.6.1
+    "@aws-sdk/invalid-dependency": 3.6.1
+    "@aws-sdk/middleware-content-length": 3.6.1
+    "@aws-sdk/middleware-host-header": 3.6.1
+    "@aws-sdk/middleware-logger": 3.6.1
+    "@aws-sdk/middleware-retry": 3.6.1
+    "@aws-sdk/middleware-serde": 3.6.1
+    "@aws-sdk/middleware-signing": 3.6.1
+    "@aws-sdk/middleware-stack": 3.6.1
+    "@aws-sdk/middleware-user-agent": 3.6.1
+    "@aws-sdk/node-config-provider": 3.6.1
+    "@aws-sdk/node-http-handler": 3.6.1
+    "@aws-sdk/protocol-http": 3.6.1
+    "@aws-sdk/smithy-client": 3.6.1
+    "@aws-sdk/types": 3.6.1
+    "@aws-sdk/url-parser": 3.6.1
+    "@aws-sdk/url-parser-native": 3.6.1
+    "@aws-sdk/util-base64-browser": 3.6.1
+    "@aws-sdk/util-base64-node": 3.6.1
+    "@aws-sdk/util-body-length-browser": 3.6.1
+    "@aws-sdk/util-body-length-node": 3.6.1
+    "@aws-sdk/util-user-agent-browser": 3.6.1
+    "@aws-sdk/util-user-agent-node": 3.6.1
+    "@aws-sdk/util-utf8-browser": 3.6.1
+    "@aws-sdk/util-utf8-node": 3.6.1
+    tslib: ^2.0.0
+  checksum: 5bcf07f8cf6b0daac54f1684e3c9b9cee889e6aaeb3eddadbe2641b2c84235327a6c506178474896ab4d4ccb6bdd55df48b4409971634b9550773a7695a4f3c6
   languageName: node
   linkType: hard
 
@@ -2524,6 +2564,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.12.5":
+  version: 7.14.8
+  resolution: "@babel/runtime@npm:7.14.8"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: ebadb3e013a26e0f62abea0da6f6f5d83c9566f0d900e65069885f93088066c64586076d15dcbe6e093c536f66cffc9e2e136ad5d8b3e66235af62f0051afa42
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.12.7, @babel/template@npm:^7.14.5, @babel/template@npm:^7.3.3, @babel/template@npm:^7.8.6":
   version: 7.14.5
   resolution: "@babel/template@npm:7.14.5"
@@ -4179,23 +4228,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pulumi/aws@npm:v3.38.1":
-  version: 3.38.1
-  resolution: "@pulumi/aws@npm:3.38.1"
+"@pulumi/aws@npm:^4.10.0":
+  version: 4.13.0
+  resolution: "@pulumi/aws@npm:4.13.0"
   dependencies:
-    "@pulumi/pulumi": ^2.17.0
+    "@pulumi/pulumi": ^3.0.0
     aws-sdk: ^2.0.0
     builtin-modules: 3.0.0
     mime: ^2.0.0
     read-package-tree: ^5.2.1
     resolve: ^1.7.1
-  checksum: e98bc4935b4fa018633babc150e838b183b8e579dc26e53212321a15fc7d7753ee1d043bcdbb11fe6c661c9c3b2f6785a2a5a12af6ce57f923c959f6a81ce00a
+  checksum: c3ee03eb065595f8bc6d0908a55a4f5026ae5fe5b84b05b95759284afeceee6d7ad575f87eae42db319aa66bef18fc639fcc2e2f522c065a82d11fe8a51bda6a
   languageName: node
   linkType: hard
 
-"@pulumi/pulumi@npm:2.25.2+dirty, @pulumi/pulumi@npm:^2.17.0":
-  version: 2.25.2
-  resolution: "@pulumi/pulumi@npm:2.25.2"
+"@pulumi/pulumi@npm:^3.0.0, @pulumi/pulumi@npm:^3.6.0":
+  version: 3.7.1
+  resolution: "@pulumi/pulumi@npm:3.7.1"
   dependencies:
     "@grpc/grpc-js": ^1.2.7
     "@logdna/tail-file": ^2.0.6
@@ -4209,11 +4258,10 @@ __metadata:
     require-from-string: ^2.0.1
     semver: ^6.1.0
     source-map-support: ^0.4.16
-    split2: ^3.2.2
     ts-node: ^7.0.1
     typescript: ~3.7.3
     upath: ^1.1.0
-  checksum: 41c42b0801b06b67041445fc414d2f5dd9fa0d13e6eeda89dcf13cda35ab61ca78899de9341240846c12c9b6556a3f6a9797439d273cc817b1db834c940f9ef5
+  checksum: 16625fa9160cd35f52224852afa87fb7f4f5ea18878c050e5c10a48b69639d8f24cba4635b6f36539d4ef28d63064475d42f3b8730d164dcf2a0b7069bc2acbd
   languageName: node
   linkType: hard
 
@@ -4639,9 +4687,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rmwc/textfield@file:./rmwc/textfield::locator=%40webiny%2Fui%40npm%3A5.10.0":
+"@rmwc/textfield@file:./rmwc/textfield::locator=%40webiny%2Fui%40npm%3A5.11.0":
   version: 5.7.2
-  resolution: "@rmwc/textfield@file:./rmwc/textfield#./rmwc/textfield::hash=de95ae&locator=%40webiny%2Fui%40npm%3A5.10.0"
+  resolution: "@rmwc/textfield@file:./rmwc/textfield#./rmwc/textfield::hash=de95ae&locator=%40webiny%2Fui%40npm%3A5.11.0"
   dependencies:
     "@material/textfield": ^3.1.0
     "@rmwc/base": ^5.7.2
@@ -4908,15 +4956,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ts-morph/common@npm:~0.10.0":
-  version: 0.10.0
-  resolution: "@ts-morph/common@npm:0.10.0"
+"@ts-morph/common@npm:~0.10.1":
+  version: 0.10.1
+  resolution: "@ts-morph/common@npm:0.10.1"
   dependencies:
     fast-glob: ^3.2.5
     minimatch: ^3.0.4
     mkdirp: ^1.0.4
     path-browserify: ^1.0.1
-  checksum: eeb3baad0f9e9dd990354f11a416603c45957522d8adbd6314e17a99c7d2ada3e71e41337d7e2c5b54fb0e6d2c2149ac4a6032b724fd45bb2ee780b058831ed5
+  checksum: 00b81b0caaa30e8e259147ce894ceff4a47704faac3775397b4ffd1e47090604f9ca86683495cc6c3cf327e2731ed00007c860a33e9b3b4fc2b150d598180996
   languageName: node
   linkType: hard
 
@@ -5178,14 +5226,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-router-dom@npm:5.1.7":
-  version: 5.1.7
-  resolution: "@types/react-router-dom@npm:5.1.7"
+"@types/react-router-dom@npm:5.1.8":
+  version: 5.1.8
+  resolution: "@types/react-router-dom@npm:5.1.8"
   dependencies:
     "@types/history": "*"
     "@types/react": "*"
     "@types/react-router": "*"
-  checksum: c5afe043f99cbe8e05e85db5b95b5fd724e7b00e0314b8bbc081e36c113e22fd102cd0c7a957c7ad55a55d2def91c17b07ffba45c2ac4a00cc56c5c927c93d4c
+  checksum: f647bc32a7b13614375714890521327168fb54f41d2acf726f5a9a16f75335da376bd399db99e8e2865dbeb6035ec2af5769936f3b76550095340d956cf4a6c6
   languageName: node
   linkType: hard
 
@@ -5575,221 +5623,258 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@webiny/api-dynamodb-to-elasticsearch@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-dynamodb-to-elasticsearch@npm:5.10.0"
+"@webiny/api-dynamodb-to-elasticsearch@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-dynamodb-to-elasticsearch@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
-    "@webiny/api-elasticsearch": 5.10.0
-    "@webiny/error": 5.10.0
-    "@webiny/handler": 5.10.0
-    aws-sdk: 2.939.0
-  checksum: 3249fb740cceee4e5fa2077dd9d464b428572992d935d2696b02ac2f7c9c561d3e6eb2a834db2e6404487032b949b01812eed5a32305f49574d16dd34aeea4d0
+    "@webiny/api-elasticsearch": 5.11.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler": 5.11.0
+    aws-sdk: 2.948.0
+  checksum: 389fa6674b06a1aa02827b0173e1201672be99a0933eabcd32ca6708634f94b19952135d3971607a56f9e52e883d7028ea79a10d2e523a5aefe3d42e99249bc6
   languageName: node
   linkType: hard
 
-"@webiny/api-elasticsearch@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-elasticsearch@npm:5.10.0"
+"@webiny/api-elasticsearch@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-elasticsearch@npm:5.11.0"
   dependencies:
     "@elastic/elasticsearch": 7.13.0
-    "@webiny/error": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/plugins": 5.10.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/plugins": 5.11.0
     aws-elasticsearch-connector: 9.0.3
-    aws-sdk: 2.939.0
+    aws-sdk: 2.948.0
     elastic-ts: 0.7.0
-  checksum: f68b8b6cfe18ab726d0808f121e2e88a4243ef71937ddd570c0c85b9bb3999793af083b6176bffe6b0f96a3dd572ca31ed59e5bf405db62de2a7453261a2dcf6
+  checksum: e46bdeae75275436d8f9820de715248c6245155193b4730fe3bdad6c5057f19ef2973337f3ed79b3a5781953b133b6beab29afc1b5eedfffb03edaf962b40fec
   languageName: node
   linkType: hard
 
-"@webiny/api-file-manager-s3@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-file-manager-s3@npm:5.10.0"
+"@webiny/api-file-manager-ddb-es@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-file-manager-ddb-es@npm:5.11.0"
   dependencies:
-    "@webiny/api-file-manager": 5.10.0
-    "@webiny/handler-graphql": 5.10.0
-    "@webiny/validation": 5.10.0
+    "@babel/runtime": 7.14.6
+    "@webiny/api-elasticsearch": 5.11.0
+    "@webiny/api-file-manager": 5.11.0
+    "@webiny/api-upgrade": 5.11.0
+    "@webiny/db-dynamodb": 5.11.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/project-utils": 5.11.0
+    aws-sdk: 2.948.0
+    dynamodb-toolbox: 0.3.4
+    lodash.chunk: 4.2.0
+    lodash.omit: 4.5.0
+  checksum: d26b34eb7853a98c7c0e64b5e8e9c889e685ae7e7efcea6120a9324eb8d87e030294248ab510cacb368f13d6a9e54814e3acd481480539fd7be0b650295b0dab
+  languageName: node
+  linkType: hard
+
+"@webiny/api-file-manager-s3@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-file-manager-s3@npm:5.11.0"
+  dependencies:
+    "@webiny/api-file-manager": 5.11.0
+    "@webiny/handler-graphql": 5.11.0
+    "@webiny/validation": 5.11.0
     form-data: 3.0.1
     node-fetch: 2.6.1
     sanitize-filename: 1.6.3
     uniqid: 5.3.0
-  checksum: 16f80daee7dfc83585795cf44f44d16051e21a3eef75fb25bc8de6920df96db2488414c5f604727ea4536b5cfac15eee61bbd157e381b7fa1cca24e93f396e27
+  checksum: 323e6cf4712c70401c316d37debb3e0159416692665365a8ab1ff796d360e7f84f589dae3b2d6bd3f804dc805f1c2835c7e6786266e215ab1c80ddd6806fa610
   languageName: node
   linkType: hard
 
-"@webiny/api-file-manager@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-file-manager@npm:5.10.0"
+"@webiny/api-file-manager@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-file-manager@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
     "@commodo/fields": 1.1.2-beta.20
-    "@webiny/api-i18n-content": 5.10.0
-    "@webiny/api-security": 5.10.0
-    "@webiny/api-tenancy": 5.10.0
-    "@webiny/api-upgrade": 5.10.0
-    "@webiny/error": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/handler-client": 5.10.0
-    "@webiny/handler-graphql": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/project-utils": 5.10.0
-    "@webiny/validation": 5.10.0
-    aws-sdk: 2.939.0
+    "@webiny/api-i18n-content": 5.11.0
+    "@webiny/api-security": 5.11.0
+    "@webiny/api-tenancy": 5.11.0
+    "@webiny/api-upgrade": 5.11.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/handler-client": 5.11.0
+    "@webiny/handler-graphql": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/project-utils": 5.11.0
+    "@webiny/validation": 5.11.0
+    aws-sdk: 2.948.0
     commodo-fields-object: 1.0.6
     mdbid: 1.0.0
     object-hash: 1.3.1
     sanitize-filename: 1.6.3
-  checksum: 7c8a09e21719c7c296f5cf23f11a62ce0ba411eed95f815755386b7ed6e95812630436e987232240656139213d5957a4a2efd5006d73fb86e1136bb34e2a038c
+  checksum: a21b98fae70b9dcbaad3a5cbc5def80052a93c919f5ce83143f93b9b869977d1a6f74b43180416d46c9d1a3b3a4a812f7bc8e2481770026cf67ddc03281d5c6d
   languageName: node
   linkType: hard
 
-"@webiny/api-form-builder@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-form-builder@npm:5.10.0"
+"@webiny/api-form-builder@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-form-builder@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
     "@commodo/fields": 1.1.2-beta.20
-    "@webiny/api-elasticsearch": 5.10.0
-    "@webiny/api-file-manager": 5.10.0
-    "@webiny/api-i18n": 5.10.0
-    "@webiny/api-i18n-content": 5.10.0
-    "@webiny/api-security": 5.10.0
-    "@webiny/api-tenancy": 5.10.0
-    "@webiny/api-upgrade": 5.10.0
-    "@webiny/db-dynamodb": 5.10.0
-    "@webiny/error": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/handler-db": 5.10.0
-    "@webiny/handler-graphql": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/validation": 5.10.0
+    "@webiny/api-elasticsearch": 5.11.0
+    "@webiny/api-file-manager": 5.11.0
+    "@webiny/api-i18n": 5.11.0
+    "@webiny/api-i18n-content": 5.11.0
+    "@webiny/api-i18n-ddb": 5.11.0
+    "@webiny/api-security": 5.11.0
+    "@webiny/api-tenancy": 5.11.0
+    "@webiny/api-upgrade": 5.11.0
+    "@webiny/db-dynamodb": 5.11.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    "@webiny/handler-graphql": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/validation": 5.11.0
     commodo-fields-object: 1.0.6
     got: 9.6.0
     json2csv: 4.5.4
     lodash: 4.17.21
     mdbid: 1.0.0
     node-fetch: 2.6.1
-    slugify: 1.5.3
-  checksum: 50792c6040824bf0b23bd733839c389cecdea811a0934958d5c7f3b49abd8e4116a5749ca32a45d1d9df406cbf97b18641974ac533e7f63695ec1deb5d0f9f42
+    slugify: 1.6.0
+  checksum: c20ba0ed95e029eb72bd6789e6bb9787bdfa4d90945d6b120b637cf7e9d52b8ed0bae534c54fb4231ba5508775c4d5a94a69d0d3e177116c8d3dfd40774d127b
   languageName: node
   linkType: hard
 
-"@webiny/api-headless-cms-ddb-es@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-headless-cms-ddb-es@npm:5.10.0"
+"@webiny/api-headless-cms-ddb-es@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-headless-cms-ddb-es@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
-    "@webiny/api-headless-cms": 5.10.0
-    "@webiny/api-upgrade": 5.10.0
-    "@webiny/db-dynamodb": 5.10.0
-    "@webiny/error": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/handler-db": 5.10.0
-    "@webiny/plugins": 5.10.0
+    "@webiny/api-headless-cms": 5.11.0
+    "@webiny/api-upgrade": 5.11.0
+    "@webiny/db-dynamodb": 5.11.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    "@webiny/plugins": 5.11.0
     dataloader: 2.0.0
     dynamodb-toolbox: 0.3.4
     jsonpack: 1.1.5
     lodash.chunk: 4.2.0
     lodash.clonedeep: 4.5.0
     lodash.omit: 4.5.0
-  checksum: 5fc5933d333b9d829b17e7876aa7fb9f746bbad653bccf8bb4f3dcde1b1b22959a12b516f1b70216dc35a7fd705fdbf81100626bcb83075814a16c4c52b11dbc
+  checksum: 550b3a33bce5c170d5c16ede643c62abff8d031cdccca0cdd31d52adb71dce512ea94abaa025731a4dd09433e3d340336b347c1eea47acbd3190c6125394ed1f
   languageName: node
   linkType: hard
 
-"@webiny/api-headless-cms@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-headless-cms@npm:5.10.0"
+"@webiny/api-headless-cms@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-headless-cms@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
     "@commodo/fields": 1.1.2-beta.20
     "@graphql-tools/schema": 7.1.5
-    "@webiny/api-file-manager": 5.10.0
-    "@webiny/api-i18n": 5.10.0
-    "@webiny/api-i18n-content": 5.10.0
-    "@webiny/api-security": 5.10.0
-    "@webiny/api-security-admin-users": 5.10.0
-    "@webiny/api-tenancy": 5.10.0
-    "@webiny/api-upgrade": 5.10.0
-    "@webiny/error": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/handler-db": 5.10.0
-    "@webiny/handler-graphql": 5.10.0
-    "@webiny/handler-http": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/validation": 5.10.0
+    "@webiny/api-file-manager": 5.11.0
+    "@webiny/api-i18n": 5.11.0
+    "@webiny/api-i18n-content": 5.11.0
+    "@webiny/api-i18n-ddb": 5.11.0
+    "@webiny/api-security": 5.11.0
+    "@webiny/api-security-admin-users": 5.11.0
+    "@webiny/api-tenancy": 5.11.0
+    "@webiny/api-upgrade": 5.11.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    "@webiny/handler-graphql": 5.11.0
+    "@webiny/handler-http": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/validation": 5.11.0
     boolean: 3.1.2
     commodo-fields-object: 1.0.6
     dataloader: 2.0.0
-    dot-prop-immutable: 1.6.0
     lodash: 4.17.21
+    p-map: 4.0.0
+    p-reduce: 2.1.0
     pluralize: 8.0.0
     shortid: 2.2.16
-    slugify: 1.5.3
-  checksum: 4d47f8c213dce205067dfc692b94d5c3d13772820bbdfe5176fb37250d28fecbf0771158d0b3f9ed8797abfce87c8c6b02498f6c83211d43fd0960ec4a6cc59f
+    slugify: 1.6.0
+  checksum: 7bbf55640855880afc65826c8ca55e346df12cc93093a8dfa3c6d4475190b5059b55b89814091bd76a38cafd42e45deec6c7fdc71e6b5050d0fc0ea7a7f9e96c
   languageName: node
   linkType: hard
 
-"@webiny/api-i18n-content@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-i18n-content@npm:5.10.0"
+"@webiny/api-i18n-content@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-i18n-content@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
-    "@webiny/api-i18n": 5.10.0
-    "@webiny/api-security": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/handler-graphql": 5.10.0
-  checksum: 885a2a4760584b84d9aa8f79f09955948074c1e9a3652c983c2172c617867598c510c799cea9796337bfed0fca8221347cb5c629b7a7b2778626b8599384c68b
+    "@webiny/api-i18n": 5.11.0
+    "@webiny/api-security": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/handler-graphql": 5.11.0
+  checksum: bd74cdb36e8a3f56e444985e3e9390c16692656e4f9924c093d79fd45aba8c0cfd8f6f581905669d00515d304629f21b6c294984a01e918988185440019c1ae2
   languageName: node
   linkType: hard
 
-"@webiny/api-i18n@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-i18n@npm:5.10.0"
+"@webiny/api-i18n-ddb@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-i18n-ddb@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
-    "@webiny/api-security": 5.10.0
-    "@webiny/api-tenancy": 5.10.0
-    "@webiny/db-dynamodb": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/handler-client": 5.10.0
-    "@webiny/handler-db": 5.10.0
-    "@webiny/handler-graphql": 5.10.0
-    "@webiny/plugins": 5.10.0
+    "@webiny/api-i18n": 5.11.0
+    "@webiny/db-dynamodb": 5.11.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    dynamodb-toolbox: 0.3.4
+  checksum: 4f47b114555babca7a212cbe9c69f3858d98ebe28463c720e04ac1c6db3b3f7addae2f33e2937f7e7c77e457de4d733211460c93690b7b7271e45d695c37ce15
+  languageName: node
+  linkType: hard
+
+"@webiny/api-i18n@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-i18n@npm:5.11.0"
+  dependencies:
+    "@babel/runtime": 7.14.6
+    "@webiny/api-security": 5.11.0
+    "@webiny/api-tenancy": 5.11.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/handler-client": 5.11.0
+    "@webiny/handler-graphql": 5.11.0
+    "@webiny/plugins": 5.11.0
     accept-language-parser: 1.5.0
     i18n-locales: 0.0.2
-  checksum: d14586dec6e928e96251698a1d33347a1fe0c10d24c0e5c7c5231e6b87a50cd693570d53f9bbcb460d62aa6faeade5876edd11107827fd5c0a20b4aed76dbd9f
+  checksum: f52f94433013f3fb369c6cc646f55d944a3b2d43caf0c5a8f762029e334a364f3867e554fbb6a3346c547933f4cb6ad575ee67ba77c4aa03f657ba3b51236034
   languageName: node
   linkType: hard
 
-"@webiny/api-page-builder@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-page-builder@npm:5.10.0"
+"@webiny/api-page-builder@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-page-builder@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
     "@commodo/fields": 1.1.2-beta.20
-    "@webiny/api-elasticsearch": 5.10.0
-    "@webiny/api-file-manager": 5.10.0
-    "@webiny/api-i18n": 5.10.0
-    "@webiny/api-i18n-content": 5.10.0
-    "@webiny/api-prerendering-service": 5.10.0
-    "@webiny/api-security": 5.10.0
-    "@webiny/api-tenancy": 5.10.0
-    "@webiny/api-upgrade": 5.10.0
-    "@webiny/cli-plugin-deploy-pulumi": 5.10.0
-    "@webiny/db-dynamodb": 5.10.0
-    "@webiny/error": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/handler-args": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/handler-client": 5.10.0
-    "@webiny/handler-db": 5.10.0
-    "@webiny/handler-graphql": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/validation": 5.10.0
+    "@webiny/api-elasticsearch": 5.11.0
+    "@webiny/api-file-manager": 5.11.0
+    "@webiny/api-i18n": 5.11.0
+    "@webiny/api-i18n-content": 5.11.0
+    "@webiny/api-prerendering-service": 5.11.0
+    "@webiny/api-security": 5.11.0
+    "@webiny/api-tenancy": 5.11.0
+    "@webiny/api-upgrade": 5.11.0
+    "@webiny/cli-plugin-deploy-pulumi": 5.11.0
+    "@webiny/db-dynamodb": 5.11.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/handler-args": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/handler-client": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    "@webiny/handler-graphql": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/validation": 5.11.0
     commodo-fields-object: 1.0.6
     dataloader: 2.0.0
     extract-zip: 1.7.0
@@ -5803,34 +5888,34 @@ __metadata:
     stream: 0.0.2
     uniqid: 5.3.0
     zip-local: 0.3.4
-  checksum: 75924334f6797351433c5cd198821e4df10c79dc79c9cfee7c20c8e723ec50518c74d77bbc15f27adbd3b138eae20bae7ef1168f814e786f36794bc241a0c35e
+  checksum: 515626906119d3d278170e88dc92d10a2f7ad6261d4be0a0d2c5c629cc86cbdf768eff9cb41dbe4b6034ed70b9bac6b74feb20bd3581e2fb4e371b1f97e48a9f
   languageName: node
   linkType: hard
 
-"@webiny/api-prerendering-service-aws@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-prerendering-service-aws@npm:5.10.0"
+"@webiny/api-prerendering-service-aws@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-prerendering-service-aws@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
-    "@webiny/api-prerendering-service": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/handler-args": 5.10.0
-    "@webiny/plugins": 5.10.0
-  checksum: 87eab02c0d0302c42aa0a2615dfa3ab30296cfc809b65f043a407e80d3a267fa31664cf5fa531afc17608955b6a16732908d341e125b1fb7d4b0c26d58f7d039
+    "@webiny/api-prerendering-service": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/handler-args": 5.11.0
+    "@webiny/plugins": 5.11.0
+  checksum: 2a5cc4d53b702591f0611b5b1990c0504d5ec8a8fb4943e6e7d7eb1e779db9d697f28b472b07e75055e7ed2fb3fe73838d8249071da8e83b2b9bd33c1a89af65
   languageName: node
   linkType: hard
 
-"@webiny/api-prerendering-service@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-prerendering-service@npm:5.10.0"
+"@webiny/api-prerendering-service@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-prerendering-service@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
-    "@webiny/error": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/handler-args": 5.10.0
-    "@webiny/handler-client": 5.10.0
-    "@webiny/handler-db": 5.10.0
-    "@webiny/plugins": 5.10.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/handler-args": 5.11.0
+    "@webiny/handler-client": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    "@webiny/plugins": 5.11.0
     chrome-aws-lambda: 5.5.0
     lodash: 4.17.21
     mdbid: 1.0.0
@@ -5840,36 +5925,36 @@ __metadata:
     posthtml-noopener: 1.0.5
     posthtml-plugin-link-preload: 1.0.0
     shortid: 2.2.16
-  checksum: 95028f76a693f8b8174575bd2feaf118a97b9413f8db27c1cc438d57b43b0acbfc3323298cd0fddf153197fd0a473c685af44a5a01492a936d50b745ce9fe82a
+  checksum: 70bcfb92134050144746b7462d06df304215eb76ee38abcb085fcb36416970bf7d229a8f8df04fc59de52f2eb292393627ab30068c4db62180bcfcbb79aeda54
   languageName: node
   linkType: hard
 
-"@webiny/api-security-admin-users-cognito@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-security-admin-users-cognito@npm:5.10.0"
+"@webiny/api-security-admin-users-cognito@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-security-admin-users-cognito@npm:5.11.0"
   dependencies:
-    "@webiny/api-security-admin-users": 5.10.0
-    "@webiny/handler-graphql": 5.10.0
-  checksum: 8cb682a91b3a5f0ee4f6e87d98e85eb26f15b1b73e22cecbf9b77c87f4548cbaf343f34957de326ee7333c6c26f218249f7dffb421de4594be75091f9a507beb
+    "@webiny/api-security-admin-users": 5.11.0
+    "@webiny/handler-graphql": 5.11.0
+  checksum: 7275c235054aac60e9b78c61219f8855f5f8f4027f160b521c028474de2a2735de4a566b30cefdca82bcd67060f4c683999882cb4ece8ccd136598bea6fe9244
   languageName: node
   linkType: hard
 
-"@webiny/api-security-admin-users@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-security-admin-users@npm:5.10.0"
+"@webiny/api-security-admin-users@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-security-admin-users@npm:5.11.0"
   dependencies:
     "@commodo/fields": 1.1.2-beta.20
-    "@webiny/api-security": 5.10.0
-    "@webiny/api-tenancy": 5.10.0
-    "@webiny/db-dynamodb": 5.10.0
-    "@webiny/error": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/handler-db": 5.10.0
-    "@webiny/handler-graphql": 5.10.0
-    "@webiny/handler-http": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/validation": 5.10.0
+    "@webiny/api-security": 5.11.0
+    "@webiny/api-tenancy": 5.11.0
+    "@webiny/db-dynamodb": 5.11.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    "@webiny/handler-graphql": 5.11.0
+    "@webiny/handler-http": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/validation": 5.11.0
     commodo-fields-object: 1.0.6
     dataloader: 2.0.0
     deep-equal: 2.0.5
@@ -5877,67 +5962,67 @@ __metadata:
     lodash.omit: 4.5.0
     md5: 2.3.0
     mdbid: 1.0.0
-  checksum: 2cf550e60bcfb4cc8e13ac430ff90d25a576a522d45ed03d57220e672b48bdf43bffb1923e25100defb1033f9056286b4ec846523efdab197577eb3bf12084a8
+  checksum: 59f79548c9e9436b910686d4d9a45ec333d5ef770c97d65c72b34300821f7c2fe3a8a5e48c6b648d9e8cd13a9f454c5a16f6cc39bc8effe0af0b11e213f9467a
   languageName: node
   linkType: hard
 
-"@webiny/api-security-cognito-authentication@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-security-cognito-authentication@npm:5.10.0"
+"@webiny/api-security-cognito-authentication@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-security-cognito-authentication@npm:5.11.0"
   dependencies:
-    "@webiny/api-security": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/handler-http": 5.10.0
+    "@webiny/api-security": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/handler-http": 5.11.0
     jsonwebtoken: 8.5.1
     jwk-to-pem: 2.0.5
     node-fetch: 2.6.1
-  checksum: 47a988279f3745a66002ac109c26851a7e679cfbc581c6a5024049500bf33585a3ee3ae00d2c55d434f006fd75fc2f2fa8be804873b4bbe8bdbe51c1125f537c
+  checksum: 29dc30e10955aea7b6daa1232daecdf0656f666fc660c8cd10745cb985f0880363333ef1af5b5bf6fb33ab49b3834e630a0166d673923ff5cf7cdedaf3963196
   languageName: node
   linkType: hard
 
-"@webiny/api-security@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-security@npm:5.10.0"
+"@webiny/api-security@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-security@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
-    "@webiny/error": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/handler-graphql": 5.10.0
-    "@webiny/plugins": 5.10.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/handler-graphql": 5.11.0
+    "@webiny/plugins": 5.11.0
     minimatch: 3.0.4
-  checksum: 3078586056a6d5be1b181ca8c2930d1f394817584a92bbd832a96fa0b92d7e2fa16028ad97cad9008e271e7b78a1771d199e558ff64dc4cda9dba371824e9b01
+  checksum: 9a762d41a584a4d977244d6234d50260baf3ec202491e6348f040a9c5a6189777ba5dd253b1877969bfa9683f3247adccb65bc9a104a97257306746fd99e1499
   languageName: node
   linkType: hard
 
-"@webiny/api-tenancy@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-tenancy@npm:5.10.0"
+"@webiny/api-tenancy@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-tenancy@npm:5.11.0"
   dependencies:
-    "@webiny/handler": 5.10.0
-    "@webiny/handler-db": 5.10.0
-    "@webiny/handler-http": 5.10.0
-    "@webiny/plugins": 5.10.0
+    "@webiny/handler": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    "@webiny/handler-http": 5.11.0
+    "@webiny/plugins": 5.11.0
     mdbid: 1.0.0
-  checksum: 91638cc2bb6f38258754217eae6dace2e3001c940be458f17a6a58314c46f26bf4d39c68c08db020cf40d8a372b6c54e68e776afa5b1d6aa027a4e3066c6b243
+  checksum: c410d1a2384407febd098f9da23a33b326f1064227e18f85dcdc7d959fb0cdff0ca1e31a0fe9c03e8dbe27b3462a20b14e653e6253ceaeb752de3444e5854914
   languageName: node
   linkType: hard
 
-"@webiny/api-upgrade@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/api-upgrade@npm:5.10.0"
+"@webiny/api-upgrade@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/api-upgrade@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
-    "@webiny/error": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/plugins": 5.10.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/plugins": 5.11.0
     semver: 7.3.5
-  checksum: c1c89e08868ce4ac4f0cba66151e9f945dde8624ac8b495e2c85934352e0ed0c2ef39fb8f1ea37b39616080f5926f3bd6467b2eaabf6a1a74f3c0115cd8bbbe6
+  checksum: aaf2a52943e31332ed81f4a27a6167170c514f2a6cca6a1e727863c37958f455706c79cb523cb080b3d4bae3dc97c819cbf048fa3fe35eee9f3926c422fcc813
   languageName: node
   linkType: hard
 
-"@webiny/app-admin@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app-admin@npm:5.10.0"
+"@webiny/app-admin@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app-admin@npm:5.11.0"
   dependencies:
     "@apollo/react-hooks": 3.1.5
     "@babel/runtime": 7.14.6
@@ -5947,13 +6032,13 @@ __metadata:
     "@svgr/webpack": 4.3.3
     "@types/mime": 2.0.3
     "@types/react": 16.14.2
-    "@webiny/app": 5.10.0
-    "@webiny/app-security": 5.10.0
-    "@webiny/form": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/react-router": 5.10.0
-    "@webiny/ui": 5.10.0
-    "@webiny/validation": 5.10.0
+    "@webiny/app": 5.11.0
+    "@webiny/app-security": 5.11.0
+    "@webiny/form": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/react-router": 5.11.0
+    "@webiny/ui": 5.11.0
+    "@webiny/validation": 5.11.0
     apollo-cache: 1.3.5
     apollo-client: 2.6.10
     apollo-link: 1.2.14
@@ -5961,7 +6046,7 @@ __metadata:
     bytes: 3.1.0
     classnames: 2.3.1
     dataurl-to-blob: 0.0.1
-    dayjs: 1.10.5
+    dayjs: 1.10.6
     dot-prop-immutable: 1.6.0
     downshift: 3.4.8
     emotion: 10.0.27
@@ -5982,25 +6067,25 @@ __metadata:
     semver: 7.3.5
     shortid: 2.2.16
     store: 2.0.12
-  checksum: e10e02ab5704abffaf01ceb1df01d06862da0af313b9d8ba3bb90a9ee65b0a0f34650313c2539b2f1d032ff4888ca8615a4cad80eba97277244e80e97af41b6e
+  checksum: e367ac722e4174468dc8360db09bd3d23479b1bdd42a79bd71f7b2d0ca951834bc69788a91533f7ba8fc99d8ef04df5fc89720596fe5ff4de67e692fdaafbfe4
   languageName: node
   linkType: hard
 
-"@webiny/app-file-manager-s3@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app-file-manager-s3@npm:5.10.0"
+"@webiny/app-file-manager-s3@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app-file-manager-s3@npm:5.11.0"
   dependencies:
-    "@webiny/plugins": 5.10.0
+    "@webiny/plugins": 5.11.0
     apollo-client: 2.6.10
     graphql: 14.7.0
     graphql-tag: 2.12.5
-  checksum: aa414b9318b9e9a475f0a8ece04a12b90bf9085ea3099a4df1f98c4ce7d9e20706c06fb5a66f5eb2c9ebb3a34976213bda6d7844dfaecb6830aef5735be47557
+  checksum: cd6f411af991d015c49509dd487c1275545315009e3f4b9caf2b6ef190eaa91695002cd0abb649343a72e9a71a750eafb3f26cf4afa8b03fd0f814601e11d1d7
   languageName: node
   linkType: hard
 
-"@webiny/app-file-manager@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app-file-manager@npm:5.10.0"
+"@webiny/app-file-manager@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app-file-manager@npm:5.11.0"
   dependencies:
     "@apollo/react-components": 3.1.5
     "@apollo/react-hooks": 3.1.5
@@ -6008,13 +6093,13 @@ __metadata:
     "@emotion/core": 10.1.1
     "@emotion/styled": 10.0.27
     "@types/react": 16.14.2
-    "@webiny/app": 5.10.0
-    "@webiny/app-admin": 5.10.0
-    "@webiny/app-security": 5.10.0
-    "@webiny/form": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/react-router": 5.10.0
-    "@webiny/ui": 5.10.0
+    "@webiny/app": 5.11.0
+    "@webiny/app-admin": 5.11.0
+    "@webiny/app-security": 5.11.0
+    "@webiny/form": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/react-router": 5.11.0
+    "@webiny/ui": 5.11.0
     apollo-cache: 1.3.5
     apollo-client: 2.6.10
     apollo-link: 1.2.14
@@ -6026,13 +6111,13 @@ __metadata:
     react: 16.14.0
     react-dom: 16.14.0
     react-helmet: 5.2.1
-  checksum: e40cec83a858e5a844fcf7b230fe01487fbddf189161e0162a46d177e83341b4be31a0e063d7da384d4cbc756de714068bdbdc27f4b0973e4b9041b2415c2d93
+  checksum: 1af591b1e8c03ded1489c902c0898778b994a221a836eca7e7c7097634dcec570f5112103ca02dc085e82b0438235c1e2a51a4dfad26b99ce60dcdbf5927517f
   languageName: node
   linkType: hard
 
-"@webiny/app-form-builder@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app-form-builder@npm:5.10.0"
+"@webiny/app-form-builder@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app-form-builder@npm:5.11.0"
   dependencies:
     "@apollo/react-hooks": 3.1.5
     "@babel/runtime": 7.14.6
@@ -6042,20 +6127,20 @@ __metadata:
     "@rmwc/menu": 5.7.2
     "@svgr/webpack": 4.3.3
     "@types/react": 16.14.2
-    "@webiny/app": 5.10.0
-    "@webiny/app-admin": 5.10.0
-    "@webiny/app-page-builder": 5.10.0
-    "@webiny/app-plugin-admin-welcome-screen": 5.10.0
-    "@webiny/app-security": 5.10.0
-    "@webiny/form": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/react-router": 5.10.0
-    "@webiny/ui": 5.10.0
-    "@webiny/validation": 5.10.0
+    "@webiny/app": 5.11.0
+    "@webiny/app-admin": 5.11.0
+    "@webiny/app-page-builder": 5.11.0
+    "@webiny/app-plugin-admin-welcome-screen": 5.11.0
+    "@webiny/app-security": 5.11.0
+    "@webiny/form": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/react-router": 5.11.0
+    "@webiny/ui": 5.11.0
+    "@webiny/validation": 5.11.0
     apollo-cache: 1.3.5
     apollo-client: 2.6.10
     apollo-utilities: 1.3.4
-    dot-prop-immutable: 2.1.0
+    dot-prop-immutable: 2.1.1
     emotion: 10.0.27
     graphql: 14.7.0
     graphql-tag: 2.12.5
@@ -6072,23 +6157,23 @@ __metadata:
     react-sortable-hoc: 1.11.0
     shortid: 2.2.16
     timeago-react: 2.0.1
-  checksum: 7d41d343c10ccb27b209a773a47c8a7fbe4d83b3351a26c046475d985ffa4736fa1263a4769ce6d8da1f46051a8c3474c4c83199b328bebebaeb7a1e40e9cc18
+  checksum: b34f607a27e3eb8adbcb592678d2acc6e88a4ff43a144bbc665d55416072b6e4714dc61a0712f170e8126c9c80a99051d0cf28ad5f3f23bb08bec7d72ac2e6f2
   languageName: node
   linkType: hard
 
-"@webiny/app-graphql-playground@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app-graphql-playground@npm:5.10.0"
+"@webiny/app-graphql-playground@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app-graphql-playground@npm:5.11.0"
   dependencies:
     "@emotion/core": 10.1.1
     "@emotion/styled": 10.0.27
-    "@webiny/app": 5.10.0
-    "@webiny/app-admin": 5.10.0
-    "@webiny/app-i18n": 5.10.0
-    "@webiny/app-security": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/react-router": 5.10.0
-    "@webiny/ui": 5.10.0
+    "@webiny/app": 5.11.0
+    "@webiny/app-admin": 5.11.0
+    "@webiny/app-i18n": 5.11.0
+    "@webiny/app-security": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/react-router": 5.11.0
+    "@webiny/ui": 5.11.0
     apollo-cache: 1.3.5
     apollo-client: 2.6.10
     apollo-link: 1.2.14
@@ -6100,13 +6185,13 @@ __metadata:
     react: 16.14.0
     react-dom: 16.14.0
     react-helmet: 5.2.1
-  checksum: 7f2463fc33dc5b673081268150940d58bacb8102ab8226ab2e2ace08e95006020082d6c31b4e3555bcd7a8dfa4894b31a96c2ce88d18e2f157f6f0ba40354034
+  checksum: 5de733995a35fa40339f2bdf8ee15b7a8e2eec6e410c62bf26e96f8dbaf3d58877b38e9b41a03f287475b4032207dbd2094e31407d4fd8099617f8ee7d67153c
   languageName: node
   linkType: hard
 
-"@webiny/app-headless-cms@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app-headless-cms@npm:5.10.0"
+"@webiny/app-headless-cms@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app-headless-cms@npm:5.11.0"
   dependencies:
     "@apollo/react-hooks": 3.1.5
     "@babel/runtime": 7.14.6
@@ -6119,24 +6204,24 @@ __metadata:
     "@fortawesome/react-fontawesome": 0.1.14
     "@svgr/webpack": 4.3.3
     "@types/react": 16.14.2
-    "@webiny/app": 5.10.0
-    "@webiny/app-admin": 5.10.0
-    "@webiny/app-graphql-playground": 5.10.0
-    "@webiny/app-i18n": 5.10.0
-    "@webiny/app-plugin-admin-welcome-screen": 5.10.0
-    "@webiny/app-security": 5.10.0
-    "@webiny/error": 5.10.0
-    "@webiny/form": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/react-router": 5.10.0
-    "@webiny/ui": 5.10.0
-    "@webiny/validation": 5.10.0
+    "@webiny/app": 5.11.0
+    "@webiny/app-admin": 5.11.0
+    "@webiny/app-graphql-playground": 5.11.0
+    "@webiny/app-i18n": 5.11.0
+    "@webiny/app-plugin-admin-welcome-screen": 5.11.0
+    "@webiny/app-security": 5.11.0
+    "@webiny/error": 5.11.0
+    "@webiny/form": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/react-router": 5.11.0
+    "@webiny/ui": 5.11.0
+    "@webiny/validation": 5.11.0
     apollo-cache: 1.3.5
     apollo-client: 2.6.10
     apollo-link: 1.2.14
     apollo-utilities: 1.3.4
     classnames: 2.3.1
-    dot-prop-immutable: 2.1.0
+    dot-prop-immutable: 2.1.1
     emotion: 10.0.27
     graphql: 14.7.0
     graphql-tag: 2.12.5
@@ -6150,47 +6235,47 @@ __metadata:
     react-dom: 16.14.0
     react-helmet: 5.2.1
     react-hotkeyz: 1.0.4
-    react-router: 5.2.0
     react-virtualized: 9.22.3
     shortid: 2.2.16
     timeago-react: 2.0.1
-  checksum: 1402665ebdf9242da122d111ec3d1f2a3a711fd2fd3ebf7f659ce75df1075ee60baabfe50f390b9a5579076f78d86fa8bd2b7f4778c7a2f8d91410786535b884
+    use-deep-compare-effect: 1.6.1
+  checksum: 695b5085b194ff30c5de98dc7e9884166a4dc829791aed2a89e4cd93ae544d83fc7cc45c72751025d195d00654d24c1c2f096c86e964d04537fdf0d324ef8c67
   languageName: node
   linkType: hard
 
-"@webiny/app-i18n-content@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app-i18n-content@npm:5.10.0"
+"@webiny/app-i18n-content@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app-i18n-content@npm:5.11.0"
   dependencies:
-    "@webiny/app": 5.10.0
-    "@webiny/app-admin": 5.10.0
-    "@webiny/app-i18n": 5.10.0
-    "@webiny/app-security": 5.10.0
-    "@webiny/form": 5.10.0
-    "@webiny/ui": 5.10.0
+    "@webiny/app": 5.11.0
+    "@webiny/app-admin": 5.11.0
+    "@webiny/app-i18n": 5.11.0
+    "@webiny/app-security": 5.11.0
+    "@webiny/form": 5.11.0
+    "@webiny/ui": 5.11.0
     emotion: 10.0.27
     react: 16.14.0
     react-dom: 16.14.0
-  checksum: afc8bf385486e570e2cb97e247601a43128ddb47c763ab863fa32684e12173ce6f2ee998217350fc421e8a6edbebda0c22a8d36d46273ca2773c80e3c7fe447a
+  checksum: 5744c0df0c14b253f209e52c22c850db499557ab6b009c0d5d71dca55dd0ec0b3031d744e77552973e08deb81b3457ac6d17625d61f5ad702e27a1913e4a0f90
   languageName: node
   linkType: hard
 
-"@webiny/app-i18n@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app-i18n@npm:5.10.0"
+"@webiny/app-i18n@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app-i18n@npm:5.11.0"
   dependencies:
     "@apollo/react-hooks": 3.1.5
     "@babel/runtime": 7.14.6
     "@emotion/core": 10.1.1
     "@emotion/styled": 10.0.27
     "@types/react": 16.14.2
-    "@webiny/app": 5.10.0
-    "@webiny/app-admin": 5.10.0
-    "@webiny/app-security": 5.10.0
-    "@webiny/form": 5.10.0
-    "@webiny/react-router": 5.10.0
-    "@webiny/ui": 5.10.0
-    "@webiny/validation": 5.10.0
+    "@webiny/app": 5.11.0
+    "@webiny/app-admin": 5.11.0
+    "@webiny/app-security": 5.11.0
+    "@webiny/form": 5.11.0
+    "@webiny/react-router": 5.11.0
+    "@webiny/ui": 5.11.0
+    "@webiny/validation": 5.11.0
     apollo-cache: 1.3.5
     apollo-client: 2.6.10
     apollo-link: 1.2.14
@@ -6203,13 +6288,13 @@ __metadata:
     react: 16.14.0
     react-dom: 16.14.0
     react-helmet: 5.2.1
-  checksum: baccf963ae5be4604adeb970daf521065026062d6b289b6a998bea7fed743c451d3be5acb2a055b23b1147f078ab6c42df5752a2bf06dd7296996877ff8e5e1c
+  checksum: c9e8c65dddadfc822db6c22f6b1307c6057d4bcdb04743419723029401ce3fb6caa06e994f09bbb078530020bb610b3f2f587e4c6a0134e5037acb8e4e79a7f8
   languageName: node
   linkType: hard
 
-"@webiny/app-page-builder@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app-page-builder@npm:5.10.0"
+"@webiny/app-page-builder@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app-page-builder@npm:5.11.0"
   dependencies:
     "@apollo/react-components": 3.1.5
     "@apollo/react-hooks": 3.1.5
@@ -6224,18 +6309,18 @@ __metadata:
     "@rmwc/menu": 5.7.2
     "@svgr/webpack": 4.3.3
     "@types/react": 16.14.2
-    "@webiny/app": 5.10.0
-    "@webiny/app-admin": 5.10.0
-    "@webiny/app-i18n": 5.10.0
-    "@webiny/app-plugin-admin-welcome-screen": 5.10.0
-    "@webiny/app-security": 5.10.0
-    "@webiny/app-tenancy": 5.10.0
-    "@webiny/form": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/react-router": 5.10.0
-    "@webiny/telemetry": 5.10.0
-    "@webiny/ui": 5.10.0
-    "@webiny/validation": 5.10.0
+    "@webiny/app": 5.11.0
+    "@webiny/app-admin": 5.11.0
+    "@webiny/app-i18n": 5.11.0
+    "@webiny/app-plugin-admin-welcome-screen": 5.11.0
+    "@webiny/app-security": 5.11.0
+    "@webiny/app-tenancy": 5.11.0
+    "@webiny/form": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/react-router": 5.11.0
+    "@webiny/telemetry": 5.11.0
+    "@webiny/ui": 5.11.0
+    "@webiny/validation": 5.11.0
     aos: 2.3.4
     apollo-cache: 1.3.5
     apollo-client: 2.6.10
@@ -6268,70 +6353,70 @@ __metadata:
     react-transition-group: 4.4.2
     react-virtualized: 9.22.3
     recoil: 0.1.3
-    slugify: 1.5.3
+    slugify: 1.6.0
     store: 2.0.12
     timeago-react: 2.0.1
     uniqid: 5.3.0
     warning: 4.0.3
-  checksum: 05df8b970fa04ccd762f3d99ee7a91d4ca16ba98e96258b24d7d4a3258554c98f75e1da12b7a4b4b34980abc15d36e1b7f554dae70176974875ef01c84e17539
+  checksum: 539ca6ae7752cc33582d0eb7e5168d9a91a1eaa2e757c4531e8b64d07406af35041e91201a8826ac3fd8ececfbe8784cc6eeae1b3ab8d277c97aef98f4f68ff4
   languageName: node
   linkType: hard
 
-"@webiny/app-plugin-admin-welcome-screen@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app-plugin-admin-welcome-screen@npm:5.10.0"
+"@webiny/app-plugin-admin-welcome-screen@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app-plugin-admin-welcome-screen@npm:5.11.0"
   dependencies:
     "@emotion/core": 10.1.1
     "@emotion/styled": 10.0.27
-    "@webiny/app-admin": 5.10.0
-    "@webiny/app-security": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/react-router": 5.10.0
-    "@webiny/ui": 5.10.0
+    "@webiny/app-admin": 5.11.0
+    "@webiny/app-security": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/react-router": 5.11.0
+    "@webiny/ui": 5.11.0
     emotion: 10.0.27
     react: 16.14.0
     react-dom: 16.14.0
     react-helmet: 6.1.0
-  checksum: c532777680cf38f44e2f63ef1fc7c5e87589401075a61b6ccad27e80bdfad7c56391d5204fb323c93629470e3af3398028edc168920a94f46c3562ec10536e43
+  checksum: 73e2ac5f8a8e01700deb939cd601997486293f691a885bcb3db2f6f451cfde3c0e49ad2f7f2956fbd8af2b04bef3f1b760422618200793e2f47d2abbdf038a20
   languageName: node
   linkType: hard
 
-"@webiny/app-security-admin-users-cognito@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app-security-admin-users-cognito@npm:5.10.0"
+"@webiny/app-security-admin-users-cognito@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app-security-admin-users-cognito@npm:5.11.0"
   dependencies:
     "@emotion/styled": 10.0.27
-    "@webiny/app": 5.10.0
-    "@webiny/app-security-cognito-authentication": 5.10.0
-    "@webiny/form": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/ui": 5.10.0
-    "@webiny/validation": 5.10.0
+    "@webiny/app": 5.11.0
+    "@webiny/app-security-cognito-authentication": 5.11.0
+    "@webiny/form": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/ui": 5.11.0
+    "@webiny/validation": 5.11.0
     emotion: 10.0.27
     react: 16.14.0
     react-dom: 16.14.0
-  checksum: ce0201d04d7e778359861677de265b837c2f4079966c4e7a0de6941b6efc61ef0697bfe9a2c6d4233c16f6338cd4f5198ec96aede40acffb60a77891bb2ffc39
+  checksum: 3abe4016c7275e31d1cc0bafff7dd5d3556332dada9c82b57960cf3eae3005b70f7eab665a09b25c1bc1dd3b3198151cc646471fd99cef5c2e1c303294dbf7cf
   languageName: node
   linkType: hard
 
-"@webiny/app-security-admin-users@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app-security-admin-users@npm:5.10.0"
+"@webiny/app-security-admin-users@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app-security-admin-users@npm:5.11.0"
   dependencies:
     "@apollo/react-hooks": 3.1.5
     "@babel/runtime": 7.14.6
     "@emotion/core": 10.1.1
     "@emotion/styled": 10.0.27
     "@types/react": 16.14.2
-    "@webiny/app": 5.10.0
-    "@webiny/app-admin": 5.10.0
-    "@webiny/app-security": 5.10.0
-    "@webiny/app-tenancy": 5.10.0
-    "@webiny/form": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/react-router": 5.10.0
-    "@webiny/ui": 5.10.0
-    "@webiny/validation": 5.10.0
+    "@webiny/app": 5.11.0
+    "@webiny/app-admin": 5.11.0
+    "@webiny/app-security": 5.11.0
+    "@webiny/app-tenancy": 5.11.0
+    "@webiny/form": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/react-router": 5.11.0
+    "@webiny/ui": 5.11.0
+    "@webiny/validation": 5.11.0
     apollo-cache: 1.3.5
     apollo-client: 2.6.10
     apollo-link: 1.2.14
@@ -6344,21 +6429,21 @@ __metadata:
     react: 16.14.0
     react-dom: 16.14.0
     react-helmet: 5.2.1
-  checksum: fc313b30a4a0f0528da21c0fa0d61e681dcd1212368b998aa48d378dc53b6c534ed7d8c0fc7d185def55346cf32c3b13a9834f8d89ebc80c73b6b3b68b7739ac
+  checksum: 41b6057577fd83c8749d77b0aa7d83c941d112cecbe2b70b0528d6a7faa1768b1430901aa63c89d75a2a74132aa82810843162e48d41ed9fe1578997d4d433cd
   languageName: node
   linkType: hard
 
-"@webiny/app-security-cognito-authentication@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app-security-cognito-authentication@npm:5.10.0"
+"@webiny/app-security-cognito-authentication@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app-security-cognito-authentication@npm:5.11.0"
   dependencies:
     "@apollo/react-hooks": 3.1.5
-    "@aws-amplify/auth": 4.1.0
+    "@aws-amplify/auth": 4.1.2
     "@emotion/core": 10.1.1
     "@types/react": 16.14.2
-    "@webiny/app": 5.10.0
-    "@webiny/app-security": 5.10.0
-    "@webiny/plugins": 5.10.0
+    "@webiny/app": 5.11.0
+    "@webiny/app-security": 5.11.0
+    "@webiny/plugins": 5.11.0
     apollo-cache: 1.3.5
     apollo-client: 2.6.10
     apollo-link: 1.2.14
@@ -6368,51 +6453,51 @@ __metadata:
     lodash.get: 4.4.2
     react: 16.14.0
     react-dom: 16.14.0
-  checksum: fa0aa81ad7a4c62849bad102e19c63d31de1a88636636fb5a5f21dcfc7b0b0412db2071fb2ade622d2a2f9974835b206f5e505c5c38625c0570cca08805daaa9
+  checksum: 5961ad719c9892bb4a36efe69f961e9b557663c90f7852b601f87428903305193ac8f0684b0a66b325d220cc7168f83425abd86ffc686286ee77672ab6de7476
   languageName: node
   linkType: hard
 
-"@webiny/app-security@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app-security@npm:5.10.0"
+"@webiny/app-security@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app-security@npm:5.11.0"
   dependencies:
-    "@webiny/app": 5.10.0
-    "@webiny/plugins": 5.10.0
+    "@webiny/app": 5.11.0
+    "@webiny/plugins": 5.11.0
     minimatch: 3.0.4
     react: 16.14.0
     react-dom: 16.14.0
-  checksum: d809403d387d6c8884a08c8c9edee92155a5f1b4e0545a82814483cffbc17ab6afd0c960a4fe984436d7606ca4b60b59d69598f97696e7e1049466107a8621c4
+  checksum: c7860e475c57d8375378e5259e983338247a496235a3ac019c9f4b04e4c20d2906189daedfe97581e36c744441f1989b5043099801c986d7dbeda922faf40f5a
   languageName: node
   linkType: hard
 
-"@webiny/app-tenancy@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app-tenancy@npm:5.10.0"
+"@webiny/app-tenancy@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app-tenancy@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
     "@types/react": 16.14.2
-    "@webiny/app": 5.10.0
-    "@webiny/app-security": 5.10.0
-    "@webiny/plugins": 5.10.0
+    "@webiny/app": 5.11.0
+    "@webiny/app-security": 5.11.0
+    "@webiny/plugins": 5.11.0
     react: 16.14.0
     react-dom: 16.14.0
-  checksum: 6d81fbdfd55e22f436f6b8b57746f1ccdc9de1af85f04e7f146df5ae5913abcb28ae2c26864b5bdae4f34b96b3d40250704a50495e3b3b053f13f6c0dca8559a
+  checksum: eb0c4101cfa61b838d4afb5d7015e74d612921deac385beb5c91ed5325c61282ee3ef16e678339a2790a2b48889c0f96d619f1b9218f2cd21030c712112578a1
   languageName: node
   linkType: hard
 
-"@webiny/app@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/app@npm:5.10.0"
+"@webiny/app@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/app@npm:5.11.0"
   dependencies:
     "@apollo/react-hooks": 3.1.5
     "@babel/runtime": 7.14.6
     "@emotion/styled": 10.0.27
     "@types/react": 16.14.2
-    "@webiny/i18n": 5.10.0
-    "@webiny/i18n-react": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/react-router": 5.10.0
-    "@webiny/ui": 5.10.0
+    "@webiny/i18n": 5.11.0
+    "@webiny/i18n-react": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/react-router": 5.11.0
+    "@webiny/ui": 5.11.0
     apollo-cache: 1.3.5
     apollo-client: 2.6.10
     apollo-link: 1.2.14
@@ -6426,26 +6511,26 @@ __metadata:
     react: 16.14.0
     react-dom: 16.14.0
     warning: 4.0.3
-  checksum: 3cc39b818673de26205d4f53441b7da018c9f7e92ba36163700ec845d0b0637767ed0a2617951d02f634c0c3bcac430d8ca1db76068665d44a788c3578c10380
+  checksum: 4a3e989635fbc6b4925a1c21dac2e36c8461cca07f390b306aadf6a9ebd4b9dc54d8bb38b10a541534186c506df01cbce6b58356810e8bbd65e86702df7b2d05
   languageName: node
   linkType: hard
 
-"@webiny/aws-layers@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/aws-layers@npm:5.10.0"
+"@webiny/aws-layers@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/aws-layers@npm:5.11.0"
   dependencies:
     chalk: 4.1.0
-  checksum: 969c316a42816245c719fb98ae36cb0a9aca300328a637f807b93bb6ed29e0744f74ac5d7caceea6c4cc89cb4dc9d11221e17e5c3e5ed38db01ccdf7e0e7b386
+  checksum: f5ea6b7a4fcca3c3c6f7b7181edfd9681390adca51f6f3fe49bd6b22ecd190c779aca5b9a22bb18e6d6ee912dec98e667a911b2213e7035745bd9fd000bfd085
   languageName: node
   linkType: hard
 
-"@webiny/cli-plugin-deploy-pulumi@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/cli-plugin-deploy-pulumi@npm:5.10.0"
+"@webiny/cli-plugin-deploy-pulumi@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/cli-plugin-deploy-pulumi@npm:5.11.0"
   dependencies:
-    "@pulumi/pulumi": 2.25.2+dirty
-    "@webiny/cli": 5.10.0
-    "@webiny/pulumi-sdk": 5.10.0
+    "@pulumi/pulumi": ^3.6.0
+    "@webiny/cli": 5.11.0
+    "@webiny/pulumi-sdk": 5.11.0
     ansi-to-html: 0.6.15
     blessed: 0.1.81
     blessed-contrib: 4.10.0
@@ -6453,6 +6538,7 @@ __metadata:
     chalk: 4.1.1
     execa: 5.1.1
     express: 4.17.1
+    fast-glob: 3.2.7
     handlebars: 4.7.7
     localtunnel: 2.0.1
     lodash: 4.17.20
@@ -6464,17 +6550,17 @@ __metadata:
     ora: 4.1.1
     rimraf: 3.0.2
     tree-kill: 1.2.2
-    ws: 7.5.2
-  checksum: 9cdfb08557033d6fe2dd726893e0e5cf58ffea364d3481666427fd04bffb6314e5bbd8abdbb17d7dcef429933198e9f3071334abda299c0363848b0d4286b4d5
+    ws: 7.5.3
+  checksum: b9c4898880a06aea6c6dba4820704911a848ad7a5197d3b1dfb45edd52f935b6bb3237782afab241fe1ac81329ee2f8da5cf7b7665860bea5c894d84dc156dc5
   languageName: node
   linkType: hard
 
-"@webiny/cli-plugin-scaffold-admin-app-module@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/cli-plugin-scaffold-admin-app-module@npm:5.10.0"
+"@webiny/cli-plugin-scaffold-admin-app-module@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/cli-plugin-scaffold-admin-app-module@npm:5.11.0"
   dependencies:
-    "@webiny/cli": 5.10.0
-    "@webiny/cli-plugin-scaffold": 5.10.0
+    "@webiny/cli": 5.11.0
+    "@webiny/cli-plugin-scaffold": 5.11.0
     case: 1.6.3
     chalk: 4.1.1
     execa: 5.1.1
@@ -6484,33 +6570,33 @@ __metadata:
     pluralize: 8.0.0
     replace-in-path: 1.0.4
     terminal-link: 2.1.1
-  checksum: fa0ae8e51f8230fe195372aa73c6605900366e0eae7fc2276458721ca8715171a19efb91b8d46ad3f8c875e1834931bda7ece768cdfc1896beb873f332c090ad
+  checksum: 021455ea2f9522e2f130c832d2ef03899a35d01e77989858d0aa34268ff1d0f04386b991077a5ad11027f93b5c2f4b3c5b52f353d380bd4ea6b0b88c388ae99e
   languageName: node
   linkType: hard
 
-"@webiny/cli-plugin-scaffold-ci@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/cli-plugin-scaffold-ci@npm:5.10.0"
+"@webiny/cli-plugin-scaffold-ci@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/cli-plugin-scaffold-ci@npm:5.11.0"
   dependencies:
-    "@webiny/cli": 5.10.0
-    "@webiny/cli-plugin-scaffold": 5.10.0
-    "@webiny/plugins": 5.10.0
+    "@webiny/cli": 5.11.0
+    "@webiny/cli-plugin-scaffold": 5.11.0
+    "@webiny/plugins": 5.11.0
     chalk: 4.1.1
     js-base64: 3.6.1
     octokit: 1.1.0
     open: 8.2.1
     terminal-link: 2.1.1
     validate-npm-package-name: 3.0.0
-  checksum: 89b54276b37d5d4a04ae8d9ff63ccb428a7811e681a8753a142f8c9e3ca1dbd6584b23299f9f8a49f93944f62a98c0cfa9636cd13c28a8a8dd57361f7ecb968e
+  checksum: 2c361654ed4b6895bec99d40c02197b3a5d4e5d1a744335d30e0f917ed655ef869d3380a6841dbc9a3e743eff82859b7db76dcc401c4e87d719999503087b012
   languageName: node
   linkType: hard
 
-"@webiny/cli-plugin-scaffold-graphql-service@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/cli-plugin-scaffold-graphql-service@npm:5.10.0"
+"@webiny/cli-plugin-scaffold-graphql-service@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/cli-plugin-scaffold-graphql-service@npm:5.11.0"
   dependencies:
-    "@webiny/cli": 5.10.0
-    "@webiny/cli-plugin-scaffold": 5.10.0
+    "@webiny/cli": 5.11.0
+    "@webiny/cli-plugin-scaffold": 5.11.0
     case: 1.6.3
     chalk: 4.1.1
     execa: 5.1.1
@@ -6521,17 +6607,17 @@ __metadata:
     replace-in-path: 1.0.4
     terminal-link: 2.1.1
     write-json-file: 4.3.0
-  checksum: d798e9db9dda8890743e46cae65866bbbb3c561f1ee02a5a9774406fbcbede5c3339135deac12462ac9a6117671a61e1220ec12969202672fd1fe0c447dbf164
+  checksum: 191ac6865db402b0c5f08e8a5e44c182acadc61f384800eeb93c2b9d2215f33199565cba47b2fa10f70942add61f5ad373fc516d2800838d95149b90c04e90d3
   languageName: node
   linkType: hard
 
-"@webiny/cli-plugin-scaffold-react-component@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/cli-plugin-scaffold-react-component@npm:5.10.0"
+"@webiny/cli-plugin-scaffold-react-component@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/cli-plugin-scaffold-react-component@npm:5.11.0"
   dependencies:
-    "@webiny/cli": 5.10.0
-    "@webiny/cli-plugin-scaffold": 5.10.0
-    "@webiny/error": 5.10.0
+    "@webiny/cli": 5.11.0
+    "@webiny/cli-plugin-scaffold": 5.11.0
+    "@webiny/error": 5.11.0
     case: 1.6.3
     chalk: 4.1.1
     execa: 5.1.1
@@ -6542,27 +6628,27 @@ __metadata:
     replace-in-path: 1.0.4
     validate-npm-package-name: 3.0.0
     write-json-file: 4.3.0
-  checksum: b53f2821de028cac7b1542dc195dc4603c77c2e99fcb095a1e559498ea2b187aadd1ada38cb4e0890dde912db205e0cd706715c6bec0e1e14a434cc07692c857
+  checksum: e0c1c434207224c5e6e61da159f941d8c01cb50d1a38cbeab24bf0c072dc180e52d31b44107d31c868040dc3aa64a86086f1e06430c5828ac45e667711068d87
   languageName: node
   linkType: hard
 
-"@webiny/cli-plugin-scaffold@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/cli-plugin-scaffold@npm:5.10.0"
+"@webiny/cli-plugin-scaffold@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/cli-plugin-scaffold@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
     inquirer: 7.3.3
     ora: 4.1.1
-    ts-morph: 11.0.0
-  checksum: ffe743fc7931599d78f5481b366e13e23420e2e9b1bf87efc2e15689c3a9a522c41165fcaed2bea8501ce02068a79ebc05b0dbf456f40f5ce6e14b251cf91b51
+    ts-morph: 11.0.3
+  checksum: c398c236e2d87c8e69ea0ef10dc148d86046c6c5d49ae59cdd666241eab0d032eb00e7c8100443d1bcc680cf5d2aba8f96779661a051164dd95b6a16e380a94f
   languageName: node
   linkType: hard
 
-"@webiny/cli-plugin-workspaces@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/cli-plugin-workspaces@npm:5.10.0"
+"@webiny/cli-plugin-workspaces@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/cli-plugin-workspaces@npm:5.11.0"
   dependencies:
-    "@webiny/project-utils": 5.10.0
+    "@webiny/project-utils": 5.11.0
     archy: 1.0.0
     chalk: 4.1.1
     execa: 5.0.0
@@ -6570,20 +6656,20 @@ __metadata:
     multimatch: 5.0.0
     p-map: 2.1.0
     random-color: 1.0.1
-  checksum: fc622deca8169537772be2043754eb0ce23f66e46b031adf33e093fed5a5db83de876fdf20234ee9457463bb9b570169d78a6608442adafca66f0c1b04db90e7
+  checksum: d17cf217b0a7cc775ad9887189954f356a60973a48daf541a63e3165a71a45ea6f398366282b43efcc67e5f02b7eca7d012e2f9644cac87676e0187cad8d98a4
   languageName: node
   linkType: hard
 
-"@webiny/cli@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/cli@npm:5.10.0"
+"@webiny/cli@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/cli@npm:5.11.0"
   dependencies:
-    "@webiny/telemetry": 5.10.0
+    "@webiny/telemetry": 5.11.0
     camelcase: 5.3.1
     chalk: 4.1.1
     dotenv: 8.2.0
     execa: 2.1.0
-    fast-glob: 3.2.6
+    fast-glob: 3.2.7
     find-up: 5.0.0
     load-json-file: 6.2.0
     ncp: 2.0.0
@@ -6592,7 +6678,7 @@ __metadata:
     replace-in-path: 1.0.4
     rimraf: 3.0.2
     semver: 7.3.4
-    ts-morph: 11.0.0
+    ts-morph: 11.0.3
     typescript: 4.1.3
     uniqid: 5.3.0
     uuid: 8.3.2
@@ -6600,20 +6686,20 @@ __metadata:
     yargs: 14.2.3
   bin:
     webiny: bin.js
-  checksum: e3f5475bf87a25ac6327c07733689957c5d79965720fb91405a199e7a56e5f050fedf73a7f2ba75178a0657fa2bcc20918709e77fbce52345a459718acd22518
+  checksum: f5a25a70c198c66762d0131c7a8e04807db0c773d857381eac28e2e60571fd2b626a0ded3e6297f68063c6da62ae32852f19a097b21e04158f575f908f570ebb
   languageName: node
   linkType: hard
 
-"@webiny/cwp-template-aws@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/cwp-template-aws@npm:5.10.0"
+"@webiny/cwp-template-aws@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/cwp-template-aws@npm:5.11.0"
   dependencies:
-    "@webiny/cli": 5.10.0
-    "@webiny/cli-plugin-deploy-pulumi": 5.10.0
-    "@webiny/telemetry": 5.10.0
+    "@webiny/cli": 5.11.0
+    "@webiny/cli-plugin-deploy-pulumi": 5.11.0
+    "@webiny/telemetry": 5.11.0
     chalk: 4.1.0
     execa: 4.1.0
-    fast-glob: 3.2.6
+    fast-glob: 3.2.7
     fs-extra: 9.0.1
     get-yarn-workspaces: 1.0.2
     inquirer: 7.3.3
@@ -6621,164 +6707,164 @@ __metadata:
     lodash: 4.17.20
     ora: 4.1.1
     write-json-file: 4.3.0
-  checksum: 7c12efc8439a55809db33069682dd28b016edb5113f76d97ee093763d0b0c9e54bd4120bcf218c828e45d7d80f19a81c0287eb14bfd3ee3d12b1cd3b08511fba
+  checksum: d9f0b87161556cfa5ffad240ff6a3e1dd3faf05ac32a785610b985d3bf7d4f79ca5ce2bd195289670d0bf981b0d6ef2772dea55dd7ccee514f8f3060500fc2ae
   languageName: node
   linkType: hard
 
-"@webiny/db-dynamodb@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/db-dynamodb@npm:5.10.0"
+"@webiny/db-dynamodb@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/db-dynamodb@npm:5.11.0"
   dependencies:
-    "@webiny/db": 5.10.0
-    "@webiny/error": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/plugins": 5.10.0
+    "@webiny/db": 5.11.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/plugins": 5.11.0
     date-fns: 2.22.1
     dot-prop: 6.0.1
     is-number: 7.0.0
     lodash.sortby: 4.7.0
-  checksum: 2ba5ba08d52488da8fbfa5ef5b4185761468b71809da00c85700cc862ed0d3f3d9ecae6f6d8386659590516160ec5edb681e186b473b279a24bcdd0c49884a72
+  checksum: 0ffa70d9c9a93cc737d610cda3c6d74563cb52e7742762ad8e57d590f33f0170fc54bdcfa33a94b2bf8b1037da32456f284edd94305e5192c9107c1b44adc29b
   languageName: node
   linkType: hard
 
-"@webiny/db@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/db@npm:5.10.0"
-  checksum: 65c19e86997964180c9e1a706b1250b5042c4b9df1e1d222b7ddbfdf195dc9e75cd80eb61457eeb47366cb34cb7917c92012ba3c48c8c88e085fdf9115951c9f
+"@webiny/db@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/db@npm:5.11.0"
+  checksum: ff5dcc947cdc7b3f62a6f66df647e275d003da0d5250dc8917f3295e3de0b50c037b664a9e231256635e1914a23121afe4f28124e7d069a4ee49efbc9d1b0277
   languageName: node
   linkType: hard
 
-"@webiny/error@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/error@npm:5.10.0"
-  checksum: 79188c11f5e23bd1c813573caf58fa581d10899e001df0ec9feccbdde88ab61161661d1768020cc7e92775f6fd04151547dd8e5673c86f815c7b0f93a8066f45
+"@webiny/error@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/error@npm:5.11.0"
+  checksum: 630d834145085b8125262cbced61d863efe81ab3024d50fd8079dddd61b65740c5853a3592ecaeaf826ad1fb5b0eaecc75d65429bd87e4721d2bbe2a50b11bce
   languageName: node
   linkType: hard
 
-"@webiny/form@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/form@npm:5.10.0"
+"@webiny/form@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/form@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
     invariant: 2.2.4
     lodash: 4.17.21
   peerDependencies:
     react: 16.14.0
-  checksum: 5fe231344a198a1a32f034ce5d2fb7c3fc141f6a3256251c188501005c2e46d9d101ea3feff91253334da01b967d541540c62d29cf641e573f54deb45a083a7a
+  checksum: da1ad6fe741ef38c636ffc10f6a5e1a8d6a16fdaf24ca6ff9068b4868aacb99902c83631b099afade7ed2e7a8965867ed89ed28efe34f951be3735dc83f5a6e8
   languageName: node
   linkType: hard
 
-"@webiny/handler-args@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/handler-args@npm:5.10.0"
+"@webiny/handler-args@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/handler-args@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
-  checksum: 82b82470fe83c4d104a36fd5029f19a56fc8d667e1251491c1d53d22adc518e353f2f9c5f8cefedb06f2b1d08dd7b2471f58b99d4a6648f0d67129ae24940766
+  checksum: b8482bf412fa6994e70c5cb9f997ad41440299317d18c841e07b10e4d6382d60e6e37dea6096de0fe850ca109d2c0d0b5fc3e046c6ffd864b42cc7474783f420
   languageName: node
   linkType: hard
 
-"@webiny/handler-aws@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/handler-aws@npm:5.10.0"
+"@webiny/handler-aws@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/handler-aws@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
-    "@webiny/handler": 5.10.0
-    "@webiny/handler-args": 5.10.0
-    "@webiny/handler-client": 5.10.0
-    "@webiny/handler-http": 5.10.0
-    "@webiny/plugins": 5.10.0
-  checksum: 3d78e78f676be65044f10614ce184858244462b9eab4ae430d8f5d7045edf68a8383c1d6539644f56fc6fcb18afc8e4c521b4a706a141f2f34a19356365e9987
+    "@webiny/handler": 5.11.0
+    "@webiny/handler-args": 5.11.0
+    "@webiny/handler-client": 5.11.0
+    "@webiny/handler-http": 5.11.0
+    "@webiny/plugins": 5.11.0
+  checksum: 2d443e81da4cceff5ebbccdfd93287eeb9ae7afbfc4c59ef4b4a03503d995d197c5f6290f08e55ac3dec5363fd613be261c21dcc7c2ce55ed472941237629b03
   languageName: node
   linkType: hard
 
-"@webiny/handler-client@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/handler-client@npm:5.10.0"
+"@webiny/handler-client@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/handler-client@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
-    "@webiny/error": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/plugins": 5.10.0
-  checksum: 63a47f5129785f7452f3377c12613bb3da1c2af6b99eeaec5f9b1390c84f57a6f96ed00e67edcaa0a576daec4b6a09549833190080473f8f0e09124254fc1dd0
+    "@webiny/error": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/plugins": 5.11.0
+  checksum: 937a40463039de0e4ab8295abe23a5d477bf0b52b333ad7b95760a67c975aecd660f8188772401f1088379443c1044bf574634acb8a73e123bac4a30c67c01dc
   languageName: node
   linkType: hard
 
-"@webiny/handler-db@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/handler-db@npm:5.10.0"
+"@webiny/handler-db@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/handler-db@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
-    "@webiny/db": 5.10.0
-    "@webiny/handler": 5.10.0
-  checksum: ad830f0d10a3ba0235ed691c2c1b175ba43c94beaf70ccec262f1f594c06ba206b9cf66a85daab5b01b75865c2f5f059dcd1bdd3d619dfc6cc19e7ef9cd38b85
+    "@webiny/db": 5.11.0
+    "@webiny/handler": 5.11.0
+  checksum: 02123a361b41611ed69ee133ad7f625cc8bc2f7fdf010f385bcf3623a7e986ffbf2ed39ef07b52f27b536e735018903c8b2d03939f9083a47fa4e7b534b8591f
   languageName: node
   linkType: hard
 
-"@webiny/handler-graphql@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/handler-graphql@npm:5.10.0"
+"@webiny/handler-graphql@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/handler-graphql@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
     "@graphql-tools/schema": 7.1.5
-    "@webiny/error": 5.10.0
-    "@webiny/handler": 5.10.0
-    "@webiny/handler-http": 5.10.0
-    "@webiny/plugins": 5.10.0
+    "@webiny/error": 5.11.0
+    "@webiny/handler": 5.11.0
+    "@webiny/handler-http": 5.11.0
+    "@webiny/plugins": 5.11.0
     boolean: 3.1.2
     graphql: 14.7.0
     graphql-scalars: 1.10.0
     graphql-tag: 2.12.5
-  checksum: 46ed0d7a6492cda421603848787122fb65859df8769b38d892c60451721e67c36ccf0bc2c69c3bec9c8a2d6e02fe13f5dcf5dbe0afc8c05ae19d42d651a45c04
+  checksum: d316281cbf71d882681dd0d492b10886832eb8f8e938fd5bb1ca0db8b2fbe895d6d62a5e709f09f12b59c3fa81bc91e8b7437acc65e8fe7543bef34a24b5b622
   languageName: node
   linkType: hard
 
-"@webiny/handler-http@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/handler-http@npm:5.10.0"
+"@webiny/handler-http@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/handler-http@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
-    "@webiny/handler": 5.10.0
+    "@webiny/handler": 5.11.0
     boolean: 3.1.2
-  checksum: 1636960fa36411a575d9d31e420de03092127f14da20ae795ba83c4dfe0aa29c46fae6a2754cb736f7dc7e2b7d175693e4fc252182a54326ce187e59ca1f2664
+  checksum: ebfab02e32f55519328eb2a7273e750f944add318e13b6b107357551d2cc6cc5e4f50813fb995311124a642530d83f776b0ca23d761503ebec84560862aa74fa
   languageName: node
   linkType: hard
 
-"@webiny/handler-logs@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/handler-logs@npm:5.10.0"
+"@webiny/handler-logs@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/handler-logs@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
     node-fetch: 2.6.1
-  checksum: caad8dcceafd040aa13998e99fb5e8bfe626562578edd8b968cd2ff8740a2e3e4bef396e151e8dec06f84adc96813fd2644b1aa042c55cb1fd7a43c52e050b20
+  checksum: 62136332858e5f267898ae3417e7472299b8bb83d6a6137ad5f862337038fc6eff1e00ca42ed8e9c5c878a59b77189bf49e03ba2561cde86f4120a87915bbdb9
   languageName: node
   linkType: hard
 
-"@webiny/handler@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/handler@npm:5.10.0"
+"@webiny/handler@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/handler@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
-    "@webiny/plugins": 5.10.0
-  checksum: 8762b570153a336be01e00753aa902b150e66e6856379c3bdf4d5fe5509b71a7d01d7d974413198315bbb24f25a1f0068d4678fd2357eeffb19bb6d31cddbf44
+    "@webiny/plugins": 5.11.0
+  checksum: a032671cafeb84b2e000f2446ef1e0bf46b2016a66086d919f8d7fb4e70f42f44074bbd656323c3b54bd013da239a3762a0819926a44718d940472d8746ad204
   languageName: node
   linkType: hard
 
-"@webiny/i18n-react@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/i18n-react@npm:5.10.0"
+"@webiny/i18n-react@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/i18n-react@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
-    "@webiny/i18n": 5.10.0
+    "@webiny/i18n": 5.11.0
     lodash: 4.17.21
   peerDependencies:
     react: 16.14.0
-  checksum: 2b1aeab3fdd334942f815068684227ffbb8e033ae8245813b3a48b23d0b96d807ae32f28081e76f0613814641486f1b1ecf7867820fd2085e1d55a739bbea75d
+  checksum: 8873e9cf47081d9adf87c30340c617ab3e5e22244b494c989e817225565815349bb3855b27f5c8e851fd632ecf3c1cc0380f4c0d90c53218fecb920798d692bd
   languageName: node
   linkType: hard
 
-"@webiny/i18n@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/i18n@npm:5.10.0"
+"@webiny/i18n@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/i18n@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
     accounting: 0.4.1
@@ -6788,23 +6874,23 @@ __metadata:
     yargs: 12.0.5
   peerDependencies:
     react: 16.14.0
-  checksum: 0aec4c7d7290dfb0f64cd3586c2c869fc3b051baecefc092c69bbce19a22f3a1510f6b1736b64c218ff5f78ba4aebff7b3f8e3c69b3d1cafb2b99a1b212552a7
+  checksum: f28396e049f3e8a6166f2bfc6e13b5e98f37cab07c6778ef08575a5f092895d9857405bba0891e39e101a4da8cfd7cef8e6090a3d39922d13aaa7e0e5bd7b153
   languageName: node
   linkType: hard
 
-"@webiny/plugins@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/plugins@npm:5.10.0"
+"@webiny/plugins@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/plugins@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
     uniqid: 5.3.0
-  checksum: 9734e0e1d2933bef82b5679ab5cdc5f96c811e6e7ea32d744ae2bffbf9a81deaeb28378629b25dd8e956b259d278c9a884423000073f382d9a92f1580d015c49
+  checksum: 99dee7aa2854d11b3afcea183ee48ec6733e35d8441062e4eaf39b3335e5b7f73f807f3da2449af65248160830b8b381b606088e2df3c38166552aeb5a1557a1
   languageName: node
   linkType: hard
 
-"@webiny/project-utils@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/project-utils@npm:5.10.0"
+"@webiny/project-utils@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/project-utils@npm:5.11.0"
   dependencies:
     "@babel/core": 7.12.10
     "@babel/plugin-proposal-class-properties": 7.12.1
@@ -6815,7 +6901,7 @@ __metadata:
     "@hot-loader/react-dom": 16.14.0+4.13.0
     "@svgr/webpack": 4.3.3
     "@types/webpack-env": 1.15.2
-    "@webiny/cli": 5.10.0
+    "@webiny/cli": 5.11.0
     babel-loader: 8.0.6
     babel-plugin-lodash: 3.3.4
     babel-plugin-named-asset-import: 0.3.7
@@ -6862,47 +6948,47 @@ __metadata:
     webpack-dev-server: 3.9.0
     webpack-manifest-plugin: 2.2.0
     webpackbar: 4.0.0
-  checksum: 279184c965f0cc0188dbcacf82b9a18dee9788c1e965e8d331dbb522f035142978308ac6c2389fe593b0f4381023cf8a05c3e61ab54bbb99e1f9bf1757cec80b
+  checksum: 9ad8d75ee8e00a59fd06bbc5adcc4d3000e2dc021e4136ae90917b2b49079c5bc30f129591e0baa0fce828cae53020fb20621ee4c1365623c5a2f8f3f0084820
   languageName: node
   linkType: hard
 
-"@webiny/pulumi-sdk@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/pulumi-sdk@npm:5.10.0"
+"@webiny/pulumi-sdk@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/pulumi-sdk@npm:5.11.0"
   dependencies:
-    "@pulumi/aws": v3.38.1
-    "@pulumi/pulumi": 2.25.2+dirty
+    "@pulumi/aws": ^4.10.0
+    "@pulumi/pulumi": ^3.6.0
     decompress: 4.2.1
     download: 5.0.3
     execa: 4.1.0
     lodash: 4.17.21
     semver: 7.3.5
     tar: 6.1.0
-  checksum: 18a6d434c430e0f1d7e3e4cb6446d8e61d4fc84d0ae48b534d75a4627d8052957ae5bb4e12498f2e5a1f55d7d65a689ff768f200c6a24807fb7e85fe5829933a
+  checksum: f272756e969e74dabc7a6ae92625fa7fb5af948d14310e832999b3ef5f03de0f5b380b0c0be4812657b3fdf3e6eb6c4cea013a0d8f7a86e2b6fade27ea86f3cc
   languageName: node
   linkType: hard
 
-"@webiny/react-rich-text-renderer@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/react-rich-text-renderer@npm:5.10.0"
+"@webiny/react-rich-text-renderer@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/react-rich-text-renderer@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
     "@editorjs/editorjs": 2.22.1
     "@types/react": 16.14.2
     classnames: 2.3.1
     react: 16.14.0
-  checksum: 0ba4e458383fb80736c842a79c70306d827478c47ab6d8512f69e19098ac92e782952124e34aee06f0a408b3e5932d36de5ab4ea74d3b8ed51c1bb12cf40fd43
+  checksum: 8b47384315b1e2ad350aae7bb3d0941daae6051fbd1face1b293a0beb080c09cbc61e50c2620a7d022f3b633d42ee68405c88ea7c9b0430d9449512a5170a61a
   languageName: node
   linkType: hard
 
-"@webiny/react-router@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/react-router@npm:5.10.0"
+"@webiny/react-router@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/react-router@npm:5.11.0"
   dependencies:
     "@apollo/react-hooks": 3.1.5
     "@babel/runtime": 7.14.6
-    "@types/react-router-dom": 5.1.7
-    "@webiny/plugins": 5.10.0
+    "@types/react-router-dom": 5.1.8
+    "@webiny/plugins": 5.11.0
     apollo-client: 2.6.10
     graphql: 14.7.0
     react: 16.14.0
@@ -6911,24 +6997,24 @@ __metadata:
     react-router-dom: 5.2.0
   peerDependencies:
     react: 16.14.0
-  checksum: 09167ace80774f27140c4b710e5894f966bd722324cbf8bb7238d2c47763aa87abc574f74b6fe816ea9bc4dfedfbd59e7a9a129c99a1bf9770e7c228d31005da
+  checksum: 5399705dc75af7aa5e0502489430ea502528503f87ea4c42b5b8d047ae82a92bafd3eab13b8b4daf1f2172ff0fe6c860213604ddc5d16a77b9f7a431969e4b85
   languageName: node
   linkType: hard
 
-"@webiny/telemetry@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/telemetry@npm:5.10.0"
+"@webiny/telemetry@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/telemetry@npm:5.11.0"
   dependencies:
     form-data: 3.0.0
     load-json-file: 6.2.0
     node-fetch: 2.6.1
-  checksum: fe484c3e72f949199582cd8e450bdd7ace69c85962e45610fb2d02de28b8f5c56a24ef8d7a045b54190bbc7aa5b5d956bde7c1d11ddb81727c730d644e71929e
+  checksum: 7cdbb7e7edda1beec2b2ee79638a656d8d9f5dd551efabbfa30041a6054cd1b4b52d9fe907ecb34a6579eedf0998e72a3c75cb74ef274051aa6544fc74616e99
   languageName: node
   linkType: hard
 
-"@webiny/ui@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/ui@npm:5.10.0"
+"@webiny/ui@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/ui@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
     "@editorjs/editorjs": 2.22.1
@@ -6989,18 +7075,18 @@ __metadata:
   peerDependencies:
     react: 16.14.0
     react-dom: 16.14.0
-  checksum: aae83a083277db425aa649beb824ed76c6b5fa1101db2a9dc6487127b0c8acc08fde79257d33ac3610c8b30e99cee0f18ab3b442cb84728654db119ff3f956db
+  checksum: 5b372c311aa4aaf420dd2f7f92d32c6b236c3d7d2d99c52762718c965611cdbd17ecdf38d566b67b0c80ca6300811110b38eec1c607eaf2ed685716ee2a38c12
   languageName: node
   linkType: hard
 
-"@webiny/validation@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@webiny/validation@npm:5.10.0"
+"@webiny/validation@npm:5.11.0":
+  version: 5.11.0
+  resolution: "@webiny/validation@npm:5.11.0"
   dependencies:
     "@babel/runtime": 7.14.6
     isnumeric: 0.3.3
     lodash: 4.17.21
-  checksum: c258c545ebc01dc0f13456fedb0c050a30f0f82cd207e3f15c124b32dbb66c91eaefb2bc21ff93667141adb8927b6f3603ceb461ac20d662019ff97ab69673a3
+  checksum: 6c9ec39d93e513b4e7d8ba2d0e2786d6462a381cde934ad8ed8d785a34dda81b236e1b12ec86729e82ad1c92c2649214ed1068bd29c5531ed8866dc1c5c5d3ef
   languageName: node
   linkType: hard
 
@@ -7174,28 +7260,28 @@ __metadata:
     "@editorjs/quote": ^2.4.0
     "@editorjs/underline": ^1.0.0
     "@types/react": ^16.14.2
-    "@webiny/app": 5.10.0
-    "@webiny/app-admin": 5.10.0
-    "@webiny/app-file-manager": 5.10.0
-    "@webiny/app-file-manager-s3": 5.10.0
-    "@webiny/app-form-builder": 5.10.0
-    "@webiny/app-graphql-playground": 5.10.0
-    "@webiny/app-headless-cms": 5.10.0
-    "@webiny/app-i18n": 5.10.0
-    "@webiny/app-i18n-content": 5.10.0
-    "@webiny/app-page-builder": 5.10.0
-    "@webiny/app-plugin-admin-welcome-screen": 5.10.0
-    "@webiny/app-security": 5.10.0
-    "@webiny/app-security-admin-users": 5.10.0
-    "@webiny/app-security-admin-users-cognito": 5.10.0
-    "@webiny/app-tenancy": 5.10.0
-    "@webiny/cli": 5.10.0
-    "@webiny/cli-plugin-deploy-pulumi": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/project-utils": 5.10.0
-    "@webiny/react-router": 5.10.0
-    "@webiny/telemetry": 5.10.0
-    "@webiny/ui": 5.10.0
+    "@webiny/app": 5.11.0
+    "@webiny/app-admin": 5.11.0
+    "@webiny/app-file-manager": 5.11.0
+    "@webiny/app-file-manager-s3": 5.11.0
+    "@webiny/app-form-builder": 5.11.0
+    "@webiny/app-graphql-playground": 5.11.0
+    "@webiny/app-headless-cms": 5.11.0
+    "@webiny/app-i18n": 5.11.0
+    "@webiny/app-i18n-content": 5.11.0
+    "@webiny/app-page-builder": 5.11.0
+    "@webiny/app-plugin-admin-welcome-screen": 5.11.0
+    "@webiny/app-security": 5.11.0
+    "@webiny/app-security-admin-users": 5.11.0
+    "@webiny/app-security-admin-users-cognito": 5.11.0
+    "@webiny/app-tenancy": 5.11.0
+    "@webiny/cli": 5.11.0
+    "@webiny/cli-plugin-deploy-pulumi": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/project-utils": 5.11.0
+    "@webiny/react-router": 5.11.0
+    "@webiny/telemetry": 5.11.0
+    "@webiny/ui": 5.11.0
     apollo-cache: ^1.3.5
     apollo-cache-inmemory: ^1.6.6
     apollo-client: ^2.2.8
@@ -7293,16 +7379,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"amazon-cognito-identity-js@npm:5.0.3":
-  version: 5.0.3
-  resolution: "amazon-cognito-identity-js@npm:5.0.3"
+"amazon-cognito-identity-js@npm:5.0.5":
+  version: 5.0.5
+  resolution: "amazon-cognito-identity-js@npm:5.0.5"
   dependencies:
     buffer: 4.9.2
     crypto-js: ^4.0.0
     fast-base64-decode: ^1.0.0
     isomorphic-unfetch: ^3.0.0
     js-cookie: ^2.2.1
-  checksum: 0179a3aea017ee55484d27df293b8e944f225b57ebfe519470a1fb16c64d5c9f08591ac2139128998541e4ae72e1ac4d58f6ff2b6373ca9378258bf6533cb7f1
+  checksum: 239c2fa3a8a45a4c38491a5fd5e74bd047770b1a31d9bb14efdf9c7e020f6cbc16554526615baee55f4465d012bd7fdf8e49ff922b7cf0411ded5f441968874b
   languageName: node
   linkType: hard
 
@@ -7470,11 +7556,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api-dynamo-to-elastic@workspace:api/code/dynamoToElastic"
   dependencies:
-    "@webiny/api-dynamodb-to-elasticsearch": 5.10.0
-    "@webiny/api-elasticsearch": 5.10.0
-    "@webiny/cli": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/project-utils": 5.10.0
+    "@webiny/api-dynamodb-to-elasticsearch": 5.11.0
+    "@webiny/api-elasticsearch": 5.11.0
+    "@webiny/cli": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/project-utils": 5.11.0
   languageName: unknown
   linkType: soft
 
@@ -7482,10 +7568,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api-file-manager-download@workspace:api/code/fileManager/download"
   dependencies:
-    "@webiny/api-file-manager": 5.10.0
-    "@webiny/cli": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/project-utils": 5.10.0
+    "@webiny/api-file-manager": 5.11.0
+    "@webiny/cli": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/project-utils": 5.11.0
   languageName: unknown
   linkType: soft
 
@@ -7493,10 +7579,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api-file-manager-manage@workspace:api/code/fileManager/manage"
   dependencies:
-    "@webiny/api-file-manager": 5.10.0
-    "@webiny/cli": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/project-utils": 5.10.0
+    "@webiny/api-file-manager": 5.11.0
+    "@webiny/cli": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/project-utils": 5.11.0
   languageName: unknown
   linkType: soft
 
@@ -7504,10 +7590,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api-file-manager-transform@workspace:api/code/fileManager/transform"
   dependencies:
-    "@webiny/api-file-manager": 5.10.0
-    "@webiny/cli": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/project-utils": 5.10.0
+    "@webiny/api-file-manager": 5.11.0
+    "@webiny/cli": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/project-utils": 5.11.0
   languageName: unknown
   linkType: soft
 
@@ -7515,28 +7601,29 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api-graphql@workspace:api/code/graphql"
   dependencies:
-    "@webiny/api-elasticsearch": 5.10.0
-    "@webiny/api-file-manager": 5.10.0
-    "@webiny/api-file-manager-s3": 5.10.0
-    "@webiny/api-form-builder": 5.10.0
-    "@webiny/api-headless-cms": 5.10.0
-    "@webiny/api-headless-cms-ddb-es": 5.10.0
-    "@webiny/api-i18n": 5.10.0
-    "@webiny/api-i18n-content": 5.10.0
-    "@webiny/api-page-builder": 5.10.0
-    "@webiny/api-prerendering-service": 5.10.0
-    "@webiny/api-security": 5.10.0
-    "@webiny/api-security-admin-users": 5.10.0
-    "@webiny/api-security-admin-users-cognito": 5.10.0
-    "@webiny/api-security-cognito-authentication": 5.10.0
-    "@webiny/api-tenancy": 5.10.0
-    "@webiny/cli": 5.10.0
-    "@webiny/db-dynamodb": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/handler-db": 5.10.0
-    "@webiny/handler-graphql": 5.10.0
-    "@webiny/handler-logs": 5.10.0
-    "@webiny/project-utils": 5.10.0
+    "@webiny/api-elasticsearch": 5.11.0
+    "@webiny/api-file-manager": 5.11.0
+    "@webiny/api-file-manager-ddb-es": 5.11.0
+    "@webiny/api-file-manager-s3": 5.11.0
+    "@webiny/api-form-builder": 5.11.0
+    "@webiny/api-headless-cms": 5.11.0
+    "@webiny/api-headless-cms-ddb-es": 5.11.0
+    "@webiny/api-i18n": 5.11.0
+    "@webiny/api-i18n-content": 5.11.0
+    "@webiny/api-page-builder": 5.11.0
+    "@webiny/api-prerendering-service": 5.11.0
+    "@webiny/api-security": 5.11.0
+    "@webiny/api-security-admin-users": 5.11.0
+    "@webiny/api-security-admin-users-cognito": 5.11.0
+    "@webiny/api-security-cognito-authentication": 5.11.0
+    "@webiny/api-tenancy": 5.11.0
+    "@webiny/cli": 5.11.0
+    "@webiny/db-dynamodb": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    "@webiny/handler-graphql": 5.11.0
+    "@webiny/handler-logs": 5.11.0
+    "@webiny/project-utils": 5.11.0
     graphql-request: ^3.4.0
   languageName: unknown
   linkType: soft
@@ -7545,21 +7632,21 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api-headless-cms@workspace:api/code/headlessCMS"
   dependencies:
-    "@webiny/api-elasticsearch": 5.10.0
-    "@webiny/api-headless-cms": 5.10.0
-    "@webiny/api-headless-cms-ddb-es": 5.10.0
-    "@webiny/api-i18n": 5.10.0
-    "@webiny/api-i18n-content": 5.10.0
-    "@webiny/api-security": 5.10.0
-    "@webiny/api-security-admin-users": 5.10.0
-    "@webiny/api-security-cognito-authentication": 5.10.0
-    "@webiny/api-tenancy": 5.10.0
-    "@webiny/cli": 5.10.0
-    "@webiny/db-dynamodb": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/handler-db": 5.10.0
-    "@webiny/handler-logs": 5.10.0
-    "@webiny/project-utils": 5.10.0
+    "@webiny/api-elasticsearch": 5.11.0
+    "@webiny/api-headless-cms": 5.11.0
+    "@webiny/api-headless-cms-ddb-es": 5.11.0
+    "@webiny/api-i18n": 5.11.0
+    "@webiny/api-i18n-content": 5.11.0
+    "@webiny/api-security": 5.11.0
+    "@webiny/api-security-admin-users": 5.11.0
+    "@webiny/api-security-cognito-authentication": 5.11.0
+    "@webiny/api-tenancy": 5.11.0
+    "@webiny/cli": 5.11.0
+    "@webiny/db-dynamodb": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    "@webiny/handler-logs": 5.11.0
+    "@webiny/project-utils": 5.11.0
   languageName: unknown
   linkType: soft
 
@@ -7567,12 +7654,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api-page-builder-update-settings@workspace:api/code/pageBuilder/updateSettings"
   dependencies:
-    "@webiny/api-page-builder": 5.10.0
-    "@webiny/cli": 5.10.0
-    "@webiny/db-dynamodb": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/handler-db": 5.10.0
-    "@webiny/project-utils": 5.10.0
+    "@webiny/api-page-builder": 5.11.0
+    "@webiny/cli": 5.11.0
+    "@webiny/db-dynamodb": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    "@webiny/project-utils": 5.11.0
   languageName: unknown
   linkType: soft
 
@@ -7580,13 +7667,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api-prerendering-service-flush@workspace:api/code/prerenderingService/flush"
   dependencies:
-    "@webiny/api-prerendering-service": 5.10.0
-    "@webiny/api-prerendering-service-aws": 5.10.0
-    "@webiny/cli": 5.10.0
-    "@webiny/db-dynamodb": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/handler-db": 5.10.0
-    "@webiny/project-utils": 5.10.0
+    "@webiny/api-prerendering-service": 5.11.0
+    "@webiny/api-prerendering-service-aws": 5.11.0
+    "@webiny/cli": 5.11.0
+    "@webiny/db-dynamodb": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    "@webiny/project-utils": 5.11.0
   languageName: unknown
   linkType: soft
 
@@ -7594,12 +7681,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api-prerendering-service-queue-add@workspace:api/code/prerenderingService/queue/add"
   dependencies:
-    "@webiny/api-prerendering-service": 5.10.0
-    "@webiny/cli": 5.10.0
-    "@webiny/db-dynamodb": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/handler-db": 5.10.0
-    "@webiny/project-utils": 5.10.0
+    "@webiny/api-prerendering-service": 5.11.0
+    "@webiny/cli": 5.11.0
+    "@webiny/db-dynamodb": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    "@webiny/project-utils": 5.11.0
   languageName: unknown
   linkType: soft
 
@@ -7607,12 +7694,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api-prerendering-service-queue-process@workspace:api/code/prerenderingService/queue/process"
   dependencies:
-    "@webiny/api-prerendering-service": 5.10.0
-    "@webiny/cli": 5.10.0
-    "@webiny/db-dynamodb": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/handler-db": 5.10.0
-    "@webiny/project-utils": 5.10.0
+    "@webiny/api-prerendering-service": 5.11.0
+    "@webiny/cli": 5.11.0
+    "@webiny/db-dynamodb": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    "@webiny/project-utils": 5.11.0
   languageName: unknown
   linkType: soft
 
@@ -7620,13 +7707,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api-prerendering-service-render@workspace:api/code/prerenderingService/render"
   dependencies:
-    "@webiny/api-prerendering-service": 5.10.0
-    "@webiny/api-prerendering-service-aws": 5.10.0
-    "@webiny/cli": 5.10.0
-    "@webiny/db-dynamodb": 5.10.0
-    "@webiny/handler-aws": 5.10.0
-    "@webiny/handler-db": 5.10.0
-    "@webiny/project-utils": 5.10.0
+    "@webiny/api-prerendering-service": 5.11.0
+    "@webiny/api-prerendering-service-aws": 5.11.0
+    "@webiny/cli": 5.11.0
+    "@webiny/db-dynamodb": 5.11.0
+    "@webiny/handler-aws": 5.11.0
+    "@webiny/handler-db": 5.11.0
+    "@webiny/project-utils": 5.11.0
   languageName: unknown
   linkType: soft
 
@@ -8101,9 +8188,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:2.939.0":
-  version: 2.939.0
-  resolution: "aws-sdk@npm:2.939.0"
+"aws-sdk@npm:2.948.0":
+  version: 2.948.0
+  resolution: "aws-sdk@npm:2.948.0"
   dependencies:
     buffer: 4.9.2
     events: 1.1.1
@@ -8114,7 +8201,7 @@ __metadata:
     url: 0.10.3
     uuid: 3.3.2
     xml2js: 0.4.19
-  checksum: 5c2922eb4000339d5b2f4a8b0defef2eb3c3b66d4d0a52b85043f6b69e9512cbcc32544f204dc21a0515e35bcda22ede131937a88a450d2656510c00e8aae514
+  checksum: d35ae7a87ec7c1e9acde28f7c43226225443b9b75098019da09de4533868c09d63e9c08e528c86d47a5c2fb4b185767106bfa6848be9939741cef6f65d3fa83d
   languageName: node
   linkType: hard
 
@@ -10710,10 +10797,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:1.10.5":
-  version: 1.10.5
-  resolution: "dayjs@npm:1.10.5"
-  checksum: 11b3a952cdb77959b07318804bd982d1d377581e4752ec478da82b494da1ebb9d82e0539481ab51f90a36e35a268a730034cb6f3cac1b45609755c909329c0a1
+"dayjs@npm:1.10.6":
+  version: 1.10.6
+  resolution: "dayjs@npm:1.10.6"
+  checksum: 474d21162c12d269d40e90cb3ce049bb2d987b8038c173224c8eb5805d6f38f07d11875779a81e282d8f889d3803c4bbb91d09b6ee08a1a44ae60ec26afd8f45
   languageName: node
   linkType: hard
 
@@ -11036,6 +11123,13 @@ __metadata:
   version: 2.3.1
   resolution: "deprecation@npm:2.3.1"
   checksum: 59343a0b927c5b6f67abb899fda68bf42b132c05ef1a985952c1e220c41fe5035b2d54a28c7c2a8b5239075d1dc25c83340242ada75f1c06c1bb047176f05f9b
+  languageName: node
+  linkType: hard
+
+"dequal@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "dequal@npm:2.0.2"
+  checksum: 3b5b019a873da282a25512c632c077e5e8e2a019e71c5b6968836443b861e44176ee3934facfecdc14994d553c1ff4a6c7232278d6aef87baf65e2413d41760c
   languageName: node
   linkType: hard
 
@@ -11381,10 +11475,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dot-prop-immutable@npm:2.1.0":
-  version: 2.1.0
-  resolution: "dot-prop-immutable@npm:2.1.0"
-  checksum: 5297a7bb2e63eb67b3c600391492ddacc06b077a652b79fc15dc2527dc6deb182f5a51c495b891ed2343f03ea65cc3bba5b482448e8bbc4f5d716dababc6654e
+"dot-prop-immutable@npm:2.1.1":
+  version: 2.1.1
+  resolution: "dot-prop-immutable@npm:2.1.1"
+  checksum: 53bee7955950fe29998ed6ca0ba62c3830ef4b7d8cdc89c7e04da3c187122ad09d961ad7a9fcc23cd54dc4623fc793522569b93734eaf2124462b293100ca5cd
   languageName: node
   linkType: hard
 
@@ -12611,16 +12705,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:3.2.6, fast-glob@npm:^3.1.1, fast-glob@npm:^3.2.5":
-  version: 3.2.6
-  resolution: "fast-glob@npm:3.2.6"
+"fast-glob@npm:3.2.7":
+  version: 3.2.7
+  resolution: "fast-glob@npm:3.2.7"
   dependencies:
     "@nodelib/fs.stat": ^2.0.2
     "@nodelib/fs.walk": ^1.2.3
     glob-parent: ^5.1.2
     merge2: ^1.3.0
     micromatch: ^4.0.4
-  checksum: 0ba488ef503d250e1881bad5d01bc1393d6ca5b1243d354c9a2c8ec2b36771179b11f3e2d4e607a454aac8f9bb29682f0c0208f6cc87b6975bb82067a54960b2
+  checksum: 819aa8f1c0b4ca2b86ec89da259c46c370f31db94e91019e99d1f010c0c5750e1ef1ef87266b55c0d0b23e900c22699fd39dacdc79c3b629547889a4f29e3f7b
   languageName: node
   linkType: hard
 
@@ -12635,6 +12729,19 @@ __metadata:
     merge2: ^1.2.3
     micromatch: ^3.1.10
   checksum: 9dc5c93807e43257b39fc53aa8ed10ffa253e997dd1d473377a7e9daa4b6c675c730b72f1aa132b80f068c4ece012ff9236a88085fc0229b180fe7c85afcae84
+  languageName: node
+  linkType: hard
+
+"fast-glob@npm:^3.1.1, fast-glob@npm:^3.2.5":
+  version: 3.2.6
+  resolution: "fast-glob@npm:3.2.6"
+  dependencies:
+    "@nodelib/fs.stat": ^2.0.2
+    "@nodelib/fs.walk": ^1.2.3
+    glob-parent: ^5.1.2
+    merge2: ^1.3.0
+    micromatch: ^4.0.4
+  checksum: 0ba488ef503d250e1881bad5d01bc1393d6ca5b1243d354c9a2c8ec2b36771179b11f3e2d4e607a454aac8f9bb29682f0c0208f6cc87b6975bb82067a54960b2
   languageName: node
   linkType: hard
 
@@ -17505,17 +17612,17 @@ fsevents@^1.2.7:
     "@types/react-dom": ^16.9.4
     "@typescript-eslint/eslint-plugin": ^4.14.1
     "@typescript-eslint/parser": ^4.14.1
-    "@webiny/aws-layers": 5.10.0
-    "@webiny/cli": 5.10.0
-    "@webiny/cli-plugin-deploy-pulumi": 5.10.0
-    "@webiny/cli-plugin-scaffold": 5.10.0
-    "@webiny/cli-plugin-scaffold-admin-app-module": 5.10.0
-    "@webiny/cli-plugin-scaffold-ci": 5.10.0
-    "@webiny/cli-plugin-scaffold-graphql-service": 5.10.0
-    "@webiny/cli-plugin-scaffold-react-component": 5.10.0
-    "@webiny/cli-plugin-workspaces": 5.10.0
-    "@webiny/cwp-template-aws": 5.10.0
-    "@webiny/project-utils": 5.10.0
+    "@webiny/aws-layers": 5.11.0
+    "@webiny/cli": 5.11.0
+    "@webiny/cli-plugin-deploy-pulumi": 5.11.0
+    "@webiny/cli-plugin-scaffold": 5.11.0
+    "@webiny/cli-plugin-scaffold-admin-app-module": 5.11.0
+    "@webiny/cli-plugin-scaffold-ci": 5.11.0
+    "@webiny/cli-plugin-scaffold-graphql-service": 5.11.0
+    "@webiny/cli-plugin-scaffold-react-component": 5.11.0
+    "@webiny/cli-plugin-workspaces": 5.11.0
+    "@webiny/cwp-template-aws": 5.11.0
+    "@webiny/project-utils": 5.11.0
     babel-plugin-dynamic-import-node: ^2.3.3
     babel-plugin-lodash: ^3.3.4
     babel-plugin-module-resolver: ^4.1.0
@@ -18534,6 +18641,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"p-map@npm:4.0.0, p-map@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "p-map@npm:4.0.0"
+  dependencies:
+    aggregate-error: ^3.0.0
+  checksum: d51e630d72b7c38bc9e396710e7a068f0b813fe4db6f4a2d1ce2972e7fa11142c763c3aa39bcfd77c0133688c1ebfdd9b38fa3ac4c6ada20b62df26239c5c0e4
+  languageName: node
+  linkType: hard
+
 "p-map@npm:^3.0.0":
   version: 3.0.0
   resolution: "p-map@npm:3.0.0"
@@ -18543,12 +18659,10 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"p-map@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "p-map@npm:4.0.0"
-  dependencies:
-    aggregate-error: ^3.0.0
-  checksum: d51e630d72b7c38bc9e396710e7a068f0b813fe4db6f4a2d1ce2972e7fa11142c763c3aa39bcfd77c0133688c1ebfdd9b38fa3ac4c6ada20b62df26239c5c0e4
+"p-reduce@npm:2.1.0":
+  version: 2.1.0
+  resolution: "p-reduce@npm:2.1.0"
+  checksum: 9014651a016b921dd46035593bc3b33fa6464ff0f11688814469a4548d95fb65088c86dd97338ede7b88de6263f9b07d80facfa08025a394fa5a562a4b247942
   languageName: node
   linkType: hard
 
@@ -21057,7 +21171,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:^3.0.0, readable-stream@npm:^3.0.6, readable-stream@npm:^3.1.1, readable-stream@npm:^3.4.0, readable-stream@npm:^3.6.0":
+"readable-stream@npm:^3.0.6, readable-stream@npm:^3.1.1, readable-stream@npm:^3.4.0, readable-stream@npm:^3.6.0":
   version: 3.6.0
   resolution: "readable-stream@npm:3.6.0"
   dependencies:
@@ -22273,10 +22387,10 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"slugify@npm:1.5.3":
-  version: 1.5.3
-  resolution: "slugify@npm:1.5.3"
-  checksum: 2f96352f294e70372761fa509d5f334c72c6c40fbc21d1b71c1ccb4d60e44ffebb9dbeb8c7e1d7bb64775c7e2bc704e8739c9b32c6ce5c7a0bbd5d846abf7133
+"slugify@npm:1.6.0":
+  version: 1.6.0
+  resolution: "slugify@npm:1.6.0"
+  checksum: 713908ecd3eb924852665a154aa4c6b788af3c01f1b3522e46abfe8d0dfe407b03c9cd46d9e95d535494b6946a6af663ba00dceab57a90bd696eaf5e059de497
   languageName: node
   linkType: hard
 
@@ -22541,15 +22655,6 @@ resolve@^2.0.0-next.3:
   dependencies:
     extend-shallow: ^3.0.0
   checksum: 9b610d1509f8213dad7d38b5f0b49109ab53c2a93e7886c370a66b9eeb723706cd01b04b61b3d906ff6369314429412f8fad54b93d57fa50103d85884f0c175f
-  languageName: node
-  linkType: hard
-
-"split2@npm:^3.2.2":
-  version: 3.2.2
-  resolution: "split2@npm:3.2.2"
-  dependencies:
-    readable-stream: ^3.0.0
-  checksum: 04bf20af25bfe917edbb7f719cc9dbd2ca16633e4e6a5e343a8c834310aafd802c74b3aceb96acf3571545b0340d55d2d3273dbee8f9bc6a811371dcfbe0c8a7
   languageName: node
   linkType: hard
 
@@ -23261,12 +23366,12 @@ resolve@^2.0.0-next.3:
   resolution: "theme@workspace:apps/theme"
   dependencies:
     "@apollo/react-components": ^3.1.5
-    "@webiny/app-form-builder": 5.10.0
-    "@webiny/app-page-builder": 5.10.0
-    "@webiny/form": 5.10.0
-    "@webiny/react-rich-text-renderer": 5.10.0
-    "@webiny/react-router": 5.10.0
-    "@webiny/validation": 5.10.0
+    "@webiny/app-form-builder": 5.11.0
+    "@webiny/app-page-builder": 5.11.0
+    "@webiny/form": 5.11.0
+    "@webiny/react-rich-text-renderer": 5.11.0
+    "@webiny/react-router": 5.11.0
+    "@webiny/validation": 5.11.0
     classnames: ^2.2.6
     emotion: ^10.0.17
     graphql: ^14.7.0
@@ -23594,13 +23699,13 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"ts-morph@npm:11.0.0":
-  version: 11.0.0
-  resolution: "ts-morph@npm:11.0.0"
+"ts-morph@npm:11.0.3":
+  version: 11.0.3
+  resolution: "ts-morph@npm:11.0.3"
   dependencies:
-    "@ts-morph/common": ~0.10.0
+    "@ts-morph/common": ~0.10.1
     code-block-writer: ^10.1.1
-  checksum: ce82960801e6cba11468014f27326493666ef6f245c5374963d61e1089904d85530e9970a71694aa96396250335f48ed988aae41c3561f154061686c6636c7ea
+  checksum: 7df68016b5428bf4a789e2b618798b83fa797f27dd9766134fb61214757a893b71c88173515f6707ca4562c5bae50ed3a6086705d542b6057baa1596520b1902
   languageName: node
   linkType: hard
 
@@ -24149,6 +24254,19 @@ typescript@4.1.3:
   languageName: node
   linkType: hard
 
+"use-deep-compare-effect@npm:1.6.1":
+  version: 1.6.1
+  resolution: "use-deep-compare-effect@npm:1.6.1"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+    "@types/react": ^17.0.0
+    dequal: ^2.0.2
+  peerDependencies:
+    react: ">=16.13"
+  checksum: a1cf1afcb0dcfc276ea95772a385006f95ef5f90aa6470d38daaa378c77c2c8bf395d632dd6d27a626eb00f4c2747f6a9cc07b1601137ef59a138b82f2fa3076
+  languageName: node
+  linkType: hard
+
 "use@npm:^3.1.0":
   version: 3.1.1
   resolution: "use@npm:3.1.1"
@@ -24589,14 +24707,14 @@ typescript@4.1.3:
     "@apollo/react-components": ^3.1.5
     "@apollo/react-hooks": ^3.1.5
     "@types/react": ^16.14.2
-    "@webiny/app": 5.10.0
-    "@webiny/app-form-builder": 5.10.0
-    "@webiny/app-page-builder": 5.10.0
-    "@webiny/cli": 5.10.0
-    "@webiny/cli-plugin-deploy-pulumi": 5.10.0
-    "@webiny/plugins": 5.10.0
-    "@webiny/project-utils": 5.10.0
-    "@webiny/react-router": 5.10.0
+    "@webiny/app": 5.11.0
+    "@webiny/app-form-builder": 5.11.0
+    "@webiny/app-page-builder": 5.11.0
+    "@webiny/cli": 5.11.0
+    "@webiny/cli-plugin-deploy-pulumi": 5.11.0
+    "@webiny/plugins": 5.11.0
+    "@webiny/project-utils": 5.11.0
+    "@webiny/react-router": 5.11.0
     apollo-cache-inmemory: ^1.6.6
     apollo-client: ^2.2.8
     apollo-link: ^1.2.14
@@ -24877,9 +24995,9 @@ typescript@4.1.3:
   languageName: node
   linkType: hard
 
-"ws@npm:7.5.2":
-  version: 7.5.2
-  resolution: "ws@npm:7.5.2"
+"ws@npm:7.5.3":
+  version: 7.5.3
+  resolution: "ws@npm:7.5.3"
   peerDependencies:
     bufferutil: ^4.0.1
     utf-8-validate: ^5.0.2
@@ -24888,7 +25006,7 @@ typescript@4.1.3:
       optional: true
     utf-8-validate:
       optional: true
-  checksum: 45eccd77921681f3cae0d646813b5c6aad40e11f90a57e7070a5ceed1ff27629d23034cb223bf77cc6de41a8a2591faa2635558bb5ba9e280edccbc088655770
+  checksum: 77ce9a21297a3a2a7a312f17bd7b98c14df11c151db12f1df814393c0e9c11e94592fc4b5b26e6d3da9de5006cbdb4bdfed0a7a2fb165fc5010d43af07b50d1c
   languageName: node
   linkType: hard
 

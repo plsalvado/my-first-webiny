@@ -49,6 +49,7 @@ import visibility from "@webiny/app-page-builder/render/plugins/elementSettings/
  * Responsive display mode plugins.
  */
 import responsiveMode from "@webiny/app-page-builder/render/plugins/responsiveMode";
+import apolloCacheObjectId from "@webiny/app-page-builder/render/plugins/apolloCacheObjectId";
 
 export default [
     linkPreload(),
@@ -86,5 +87,6 @@ export default [
     margin,
     textSetting,
     visibility,
-    responsiveMode()
+    responsiveMode(),
+    apolloCacheObjectId
 ];
