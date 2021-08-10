@@ -88,7 +88,14 @@ export default [
     icon(),
     image(),
     imagesList(),
-    button(),
+    button({
+        settings: defaultValue => [
+            ...defaultValue,
+            "pb-editor-page-element-style-settings-padding",
+            "pb-editor-page-element-style-settings-width"
+        ]
+    }
+    ),
     soundcloud(),
     vimeo(),
     youtube(),

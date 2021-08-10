@@ -20,6 +20,8 @@ import headlessCmsDynamoDbElasticStorageOperation from "@webiny/api-headless-cms
 // Imports plugins created via scaffolding utilities.
 import scaffoldsPlugins from "./plugins/scaffolds";
 import fileManagerDynamoDbElasticPlugins from "@webiny/api-file-manager-ddb-es";
+import i18nDynamoDbStorageOperations from "@webiny/api-i18n-ddb";
+import dynamoDbPlugins from "@webiny/db-dynamodb/plugins";
 
 const debug = process.env.DEBUG === "true";
 
@@ -58,7 +60,9 @@ export const handler = createHandler({
         formBuilderPlugins(),
         headlessCmsPlugins(),
         headlessCmsDynamoDbElasticStorageOperation(),
-        scaffoldsPlugins()
+        scaffoldsPlugins(),
+        i18nDynamoDbStorageOperations(),
+        dynamoDbPlugins()
     ],
     http: { debug }
 });

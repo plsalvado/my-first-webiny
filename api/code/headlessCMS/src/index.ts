@@ -12,6 +12,8 @@ import logsPlugins from "@webiny/handler-logs";
 
 // Imports plugins created via scaffolding utilities.
 import scaffoldsPlugins from "./plugins/scaffolds";
+import i18nDynamoDbStorageOperations from "@webiny/api-i18n-ddb";
+import dynamoDbPlugins from "@webiny/db-dynamodb/plugins";
 
 const debug = process.env.DEBUG === "true";
 
@@ -33,7 +35,9 @@ export const handler = createHandler({
         i18nContentPlugins(),
         headlessCmsPlugins({ debug }),
         headlessCmsDynamoDbElasticStorageOperation(),
-        scaffoldsPlugins()
+        scaffoldsPlugins(),
+        i18nDynamoDbStorageOperations(),
+        dynamoDbPlugins()
     ],
     http: { debug }
 });
