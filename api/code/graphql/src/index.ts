@@ -8,7 +8,7 @@ import pageBuilderPlugins from "@webiny/api-page-builder/graphql";
 import prerenderingServicePlugins from "@webiny/api-prerendering-service/client";
 import dbPlugins from "@webiny/handler-db";
 import { DynamoDbDriver } from "@webiny/db-dynamodb";
-import elasticSearch from "@webiny/api-plugin-elastic-search-client";
+import elasticSearch from "@webiny/api-elasticsearch";
 import fileManagerPlugins from "@webiny/api-file-manager/plugins";
 import logsPlugins from "@webiny/handler-logs";
 import fileManagerS3 from "@webiny/api-file-manager-s3";
@@ -19,6 +19,9 @@ import headlessCmsDynamoDbElasticStorageOperation from "@webiny/api-headless-cms
 
 // Imports plugins created via scaffolding utilities.
 import scaffoldsPlugins from "./plugins/scaffolds";
+import fileManagerDynamoDbElasticPlugins from "@webiny/api-file-manager-ddb-es";
+import i18nDynamoDbStorageOperations from "@webiny/api-i18n-ddb";
+import dynamoDbPlugins from "@webiny/db-dynamodb/plugins";
 
 const debug = process.env.DEBUG === "true";
 
@@ -40,7 +43,7 @@ export const handler = createHandler({
         i18nPlugins(),
         i18nContentPlugins(),
         fileManagerPlugins(),
-        // Add File storage S3 plugin for API file manager.
+        fileManagerDynamoDbElasticPlugins(),
         fileManagerS3(),
         prerenderingServicePlugins({
             handlers: {
@@ -57,7 +60,9 @@ export const handler = createHandler({
         formBuilderPlugins(),
         headlessCmsPlugins(),
         headlessCmsDynamoDbElasticStorageOperation(),
-        scaffoldsPlugins()
+        scaffoldsPlugins(),
+        i18nDynamoDbStorageOperations(),
+        dynamoDbPlugins()
     ],
     http: { debug }
 });
