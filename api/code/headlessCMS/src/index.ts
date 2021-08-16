@@ -15,6 +15,9 @@ import scaffoldsPlugins from "./plugins/scaffolds";
 import i18nDynamoDbStorageOperations from "@webiny/api-i18n-ddb";
 import dynamoDbPlugins from "@webiny/db-dynamodb/plugins";
 
+// Importing custom plugins
+import customModels from "./plugins/customModels"
+
 const debug = process.env.DEBUG === "true";
 
 export const handler = createHandler({
@@ -37,7 +40,8 @@ export const handler = createHandler({
         headlessCmsDynamoDbElasticStorageOperation(),
         scaffoldsPlugins(),
         i18nDynamoDbStorageOperations(),
-        dynamoDbPlugins()
+        dynamoDbPlugins(),
+        customModels
     ],
     http: { debug }
 });
