@@ -16,7 +16,9 @@ import i18nDynamoDbStorageOperations from "@webiny/api-i18n-ddb";
 import dynamoDbPlugins from "@webiny/db-dynamodb/plugins";
 
 // Importing custom plugins
-import customModels from "./plugins/customModels"
+import customModels from "./plugins/customModels";
+import securityAdminUsersDynamoDbStorageOperations from "@webiny/api-security-admin-users-so-ddb";
+import elasticsearchDataGzipCompression from "@webiny/api-elasticsearch/plugins/GzipCompression";
 
 const debug = process.env.DEBUG === "true";
 
@@ -29,9 +31,9 @@ export const handler = createHandler({
             driver: new DynamoDbDriver({
                 documentClient: new DocumentClient({
                     convertEmptyValues: true,
-                    region: process.env.AWS_REGION
-                })
-            })
+                    region: process.env.AWS_REGION,
+                }),
+            }),
         }),
         securityPlugins(),
         i18nPlugins(),
@@ -41,7 +43,9 @@ export const handler = createHandler({
         scaffoldsPlugins(),
         i18nDynamoDbStorageOperations(),
         dynamoDbPlugins(),
-        customModels
+        customModels,
+        securityAdminUsersDynamoDbStorageOperations(),
+        elasticsearchDataGzipCompression(),
     ],
-    http: { debug }
+    http: { debug },
 });

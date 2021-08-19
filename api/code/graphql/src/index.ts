@@ -22,6 +22,8 @@ import scaffoldsPlugins from "./plugins/scaffolds";
 import fileManagerDynamoDbElasticPlugins from "@webiny/api-file-manager-ddb-es";
 import i18nDynamoDbStorageOperations from "@webiny/api-i18n-ddb";
 import dynamoDbPlugins from "@webiny/db-dynamodb/plugins";
+import securityAdminUsersDynamoDbStorageOperations from "@webiny/api-security-admin-users-so-ddb";
+import elasticsearchDataGzipCompression from "@webiny/api-elasticsearch/plugins/GzipCompression";
 
 const debug = process.env.DEBUG === "true";
 
@@ -35,9 +37,9 @@ export const handler = createHandler({
             driver: new DynamoDbDriver({
                 documentClient: new DocumentClient({
                     convertEmptyValues: true,
-                    region: process.env.AWS_REGION
-                })
-            })
+                    region: process.env.AWS_REGION,
+                }),
+            }),
         }),
         securityPlugins(),
         i18nPlugins(),
@@ -51,9 +53,9 @@ export const handler = createHandler({
                 flush: process.env.PRERENDERING_FLUSH_HANDLER,
                 queue: {
                     add: process.env.PRERENDERING_QUEUE_ADD_HANDLER,
-                    process: process.env.PRERENDERING_QUEUE_PROCESS_HANDLER
-                }
-            }
+                    process: process.env.PRERENDERING_QUEUE_PROCESS_HANDLER,
+                },
+            },
         }),
         adminUsersPlugins(),
         pageBuilderPlugins(),
@@ -62,7 +64,9 @@ export const handler = createHandler({
         headlessCmsDynamoDbElasticStorageOperation(),
         scaffoldsPlugins(),
         i18nDynamoDbStorageOperations(),
-        dynamoDbPlugins()
+        dynamoDbPlugins(),
+        securityAdminUsersDynamoDbStorageOperations(),
+        elasticsearchDataGzipCompression(),
     ],
-    http: { debug }
+    http: { debug },
 });
